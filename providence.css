@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    background-color: #eeeef2;
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Remove default body margin to prevent unwanted space */
+}
+.svg-container {
+    position: absolute;
+    width: 90%; 
+    max-width: 800px; 
+    height: 800px;
+    top: 10%;
+    left: 15%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #22223b;
+}
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+
+
+  .st2:hover {
+    fill: #FFD95A;
+    stroke: #eee;
+    transition: 0.1s;
+    
+  }
+  
+  .messageBox {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 254, 254, 0.9);
+    color: #2A4353;
+    padding: 10px;
+    border-radius: 5px; /* Adding rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+  /* Adjusting the arrow to remove it */
+  .messageBox::before {
+    display: none;
+  }
+
+.st1piety{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1piety:hover {
+    fill: rgb(194, 71, 118);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1reflection{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1reflection:hover {
+    fill: rgb(60, 177, 147);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1solace{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1solace:hover {
+    fill: rgb(177, 56, 98);
+    stroke:transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1serenity{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1serenity:hover {
+    fill: rgb(166, 53, 170);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tranquility{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1tranquility:hover {
+    fill: rgb(68, 27, 163);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1evergreen{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1evergreen:hover {
+    fill: rgb(202, 46, 59);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tapestry{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1tapestry:hover {
+    fill: rgb(170, 72, 7);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.search-container {
+    position: absolute;
+    margin-top: 20px; /* Add some space between search bar and search result */
+    top: 15%;
+    left:60%;
+    height: auto;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 500px;
+    border: 3px solid #266529;
+    border-radius: 4px;
+}
+
+#searchresult {
+    position: absolute;
+    z-index: 20;
+    background-color: #f1f1f1;
+    align-items: center;
+    border-radius: 2%;
+    top: 90%;
+    font-size: 13px;
+    width: auto; /* Adjust width as needed */
+    width: 500px;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow at the bottom */
+}
+
+.searchresult div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchresult div:hover {
+    background-color: #d8d8d8;
+}
+.white-box {
+    position: absolute;
+    left: 61%;  
+    top: 30%; 
+    height: 200px;
+    width: 26%;  
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.white-box p
+{
+    color: #000;
+}
+.locate {
+    position: absolute;
+    top: 50%;    
+    left: 61%;
+    color: #eeeef2;
+    font-size: 15px;
+    transform: translateY(90%);
+    background-image: linear-gradient(to right, #3da542, #7fd175, #3da542, #7fd175, #3da542);
+    padding: 10px 60px;
+    border-color: #FFD95A;
+    border-style: solid;
+    background-clip: padding-box; /* Correct value */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.89); /* Shadow for depth */
+}
+.locate a {
+    text-decoration: none;
+    color: #eeeef2;
+    font-weight: bold;
+}
+@keyframes glow {
+    0% { fill: #ffffff; }
+    50% { fill: #ff0000; }
+    100% { fill: #ffffff; }
+}
+
+/* Apply the glow animation to polygons with the class 'glow' */
+polygon.glow {
+    animation: glow 1.5s infinite;
+}
+.vacants {
+    position: absolute;
+    top: 50%;    
+    left: 72%;    
+    color: #eeeef2;
+    font-size: 15px;
+    transform: translateY(90%);
+    background-image: linear-gradient(to right, #3da542, #7fd175, #3da542, #7fd175, #3da542);
+    padding: 10px 60px;
+    border-color: #FFD95A;
+    border-style: solid;
+    background-clip: padding-box; /* Correct value */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.89); /* Shadow for depth */
+}
+.vacants a {
+    text-decoration: none;
+    color: #eeeef2;
+    font-weight: bold;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    padding: 20px 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #eeeef2;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add bottom shadow */
+}
+
+.navigation {
+    transform: translateY(-50%);
+}
+.navigation {
+    position: relative;
+    top: 70%; /* Adjust the vertical position */
+    transform: translateY(-50%);
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #328636; /* Set text color to black */
+    text-decoration: none;
+    font-weight: 570;
+    margin-left: 20px; /* Adjust margin as needed */
+    z-index: 1;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right,  #19431b, #3da542, #7fd175, #3da542, #19431b); /* Set the line color to black */
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation .btnLogin-popup
+{
+    
+    position: relative;
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fefee3;
+    font-weight: 500;
+    margin-left: 40px;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to right, #328636, #3da542, #7fd175, #3da542, #328636);
+    background-origin: border-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    animation: moveGoldGradient 2s linear infinite alternate;
+}
+.logo {
+    position: relative; /* Change to absolute positioning */
+    left: 20px; /* Adjust the left position as needed */
+    width: 250px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    background: url("pictures/providencelogowithtext.png") no-repeat;        
+    background-size: contain; /* Set to contain to fit the entire image */
+    z-index: 1000; /* Set a higher z-index to ensure it's on top */
+}
+.navigation .btnLogin-popup:hover
+{
+    background: #b7e0b4;
+    color: #162938;
+}
+.logo:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease;
+}
+.logo:not(:hover) {
+    transition: transform 0.3s ease;
+    transform: scale(1); /* Zoom back out when not hovered */
+}
+
+.wrapper
+{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 10%;
+    left: 74%;
+    background: #eeeef2;
+    border: 2px solid #174e19;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 999;
+}
+.wrapper.active-popup
+{
+    transform: scale(1);
+}
+
+.wrapper.active
+{
+    height: 700px;
+}
+.wrapper .form-box
+{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box.login
+{
+    transition: transform .18s ease;
+    transform: translateX(0);
+    /*display: none;*/
+}
+
+.wrapper.active .form-box.login
+{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register
+{
+    position: absolute;
+    transition: none;
+    transform: translateX(600px);
+    
+}
+.wrapper.active .form-box.register
+{
+    position: absolute;
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper .iconclose
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(46, 46, 46);
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-box h2
+{
+    font-size: 2em;
+    color: #174e19;
+    text-align: center;
+    top: 20px;
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #3da542;
+    margin: 30px 0;
+}
+
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #174e19;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -5px;
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #126e15;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #174e19;
+    line-height: 57px;
+}
+
+.remember-forgot
+{
+    font-size: .9em;
+    color: #174e19;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input
+{
+    accent-color: #174e19;
+    margin-right: 3px;
+}
+.remember-forgot a
+{
+    color: #174e19;
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+.btn
+{
+    width: 100%;
+    height: 45px;
+    background-image: linear-gradient(to right, #328636, #3da542, #7fd175, #3da542, #328636);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+@keyframes moveGoldGradient {
+    0% {
+        border-radius: 10px;
+        border-image-source: linear-gradient(to right,#328636, #3da542, #7fd175, #3da542, #328636);
+        border-image-slice: 1;
+        border-image-width: 2px;
+        border-image-outset: 0;
+        border-color: transparent;
+        background-position: 0 0;
+    }
+    100% {
+        border-radius: 10px;
+        border-image-source: linear-gradient(to right, #328636, #3da542, #7fd175, #3da542, #328636);
+        border-image-slice: 1;
+        border-image-width: 2px;
+        border-image-outset: 0;
+        border-color: transparent;
+        background-position: 100% 0;
+    }
+}
+.login-register
+{
+    font-size: .9em;
+    color: #174e19;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a
+{
+    color: #174e19;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login-register p a:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #eeeef2;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('pictures/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+.providence3dlogo
+{
+  position: absolute;
+  top: 5%;
+  left: 93.2%;
+  height: 100px;
+  width: 120px;
+  z-index: 1000;
+  overflow-y: hidden;
+}
+.sidebackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  width: 20%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+}
+
+.rightbackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: absolute;
+  left: 90%;
+  z-index: 0;
+  top: 0;
+  width: 10%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-right: 10px solid #306e4a;
+}
+
+.admintext3d
+{
+  position: absolute;
+  top: 10%;
+  left: -2.5%;
+  height: 80%;
+  width: 250px;
+  z-index: 1000;
+  
+}
+.stats3dlogo
+{
+  position: fixed;
+  top: 0%;
+  left: 78%;
+  height: 35%;
+  width: 16%;
+  z-index: 1000;
+ /* border: solid 1px black; */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    padding: 20px 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #eeeef2;
+    font-size: 14px;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add bottom shadow */
+}
+.logoprovidence {
+    position: relative; /* Change to absolute positioning */
+    left: 20px; /* Adjust the left position as needed */
+    width: 250px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    background: url("pictures/providencelogowithtext.png") no-repeat;        
+    background-size: contain; /* Set to contain to fit the entire image */
+    z-index: 3; /* Set a higher z-index to ensure it's on top */
+}
+.navigation .btnLogin-popup:hover
+{
+    background: #b7e0b4;
+    color: #162938;
+}
+.logoprovidence:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease;
+}
+.logoprovidence:not(:hover) {
+    transition: transform 0.3s ease;
+    transform: scale(1); /* Zoom back out when not hovered */
+}
+
+.navigation {
+    transform: translateY(-50%);
+}
+.navigation {
+    position: relative;
+    top: 70%; /* Adjust the vertical position */
+    transform: translateY(-50%);
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #328636; /* Set text color to black */
+    text-decoration: none;
+    font-weight: 570;
+    margin-left: 20px; /* Adjust margin as needed */
+    z-index: 1;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right,  #19431b, #3da542, #7fd175, #3da542, #19431b); /* Set the line color to black */
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 9%;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #367952, #1f412d);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 10px solid #306e4a;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    transition: width 0.5s ease;
+    z-index: 999;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+    width: 260px; /* Set default width */
+  }
+
+.sidebar .logo {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+
+.sidebar .logo h2,
+.sidebar .logo h2:hover {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+
+.sidebar .links {
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 100%;
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li span{
+    color: #eeeef2;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #59cc89;
+}
+
+.links h4 {
+    color: #eeeef2;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+
+.sidebar .links h4,
+.sidebar .links li:hover h4 {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar .links hr,
+.sidebar .links li:hover hr {
+    border-color: transparent;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+
+.links li span {
+    padding: 12px 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+
+.links li a {
+    padding: 10px;
+    color: #eeeef2;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+
+.sidebar .links li a,
+.sidebar .links li:hover a {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.internmentform {
+    position: absolute;
+    background-color: #eeeef2;
+    width: 71%;
+    height: 100%;
+    left: 22%;
+    align-items: center;
+    border-right: 10px solid #367952; /* Keep the right border */
+    border-bottom: none; /* Remove the bottom border */
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+    padding-top: 5%;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+    overflow-x: hidden;
+}
+.internmentform h1
+{
+  position: relative;
+  width: 50%;
+  top: -5%;
+  left: 30%;
+}
+.detailstable {
+    top: -5%;
+    left: 5%;
+    position: relative;
+    padding-top: 5%;
+    height: auto;
+    min-height: 90%;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:  0 0 15px #bfbfbf; 
+    background-color: #eeeef2; 
+    border-radius: 20px; 
+    border: 5px solid #328636;
+  }
+
+  .detailstable h1{
+    position: absolute;
+    top: 39%;
+    left: 40.5%;
+    transform: translatey(-50%);
+  }
+  
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+table {
+
+    position: relative;
+    top: 15%;
+    text-align: center;
+    max-width: 100%;
+    width: 90%;
+
+    border-collapse: collapse;
+    border-radius: 15px;
+    margin: 0 auto; /* This centers the table horizontally within its container */
+    border-radius: 5px; /* Add border radius to make corners circular */
+    border: none;
+  }
+  
+  td {
+    max-height: 10px; /* Set the desired fixed height */
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Add this line to prevent wrapping */
+    text-align: center;
+    background-color: #eeeef2;
+  }
+  th{
+  
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    height: 12px; /* Add border radius to make corners circular */
+  }
+  
+  th {
+    background-color: #266529;
+    color: white;
+    font-weight: bold;
+  }
+  .search-bar {
+    position: relative;
+    top: 5%;
+    left: 28%;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+    margin-left: auto; /* Or margin-right: 0 */
+    border-radius: 5px;    /* Rounded corners for a smoother look */
+    padding: 5px;          /* Add some padding for aesthetics */
+  }
+  .search-bar input {
+    padding: 8px;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray; /* Border color and thickness */
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    height: 50px;
+    width: 40px;
+    font-size: 24px; /* Adjust the font-size to make the icon bigger */
+  }
+
+    #product-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+    }
+
+    #product-table th, #product-table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .clickable-row {
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        border-bottom: 2px solid #e7be37;
+        
+    }
+
+    .clickable-row:hover {
+        transform: scale(1.05);
+        background-color: #f2f2f2;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow:  0 0 15px #bfbfbf; 
+        border-radius: 5%; 
+
+    }
+  
+    .document-link {
+        background-color: #ffc300;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .document-link ion-icon {
+        color: #eeeef2;
+      }
+  
+    .document-link1 {
+        background-color: #2472e6;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .document-link1 ion-icon {
+        color: #eeeef2;
+      }
+  
+
+  

@@ -1,0 +1,472 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --grey:#5a5959;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+@media (max-width: 1600px)
+{
+    .logo {
+        width: 50%;
+        height: 50px;
+        background: url("pictures/providencelogowithtext.png") no-repeat;        
+        background-size: contain;
+    }
+    .wrapper
+    {
+        top: 11%;
+        width: 22%;
+        height: 450px;
+    }
+    .wrapper.active
+    {
+        top: 11%;
+        height: 850px;
+        width: 22%;
+    }
+    .wrapper .form-box
+    {
+        padding: 8%;
+    }
+    .wrapper .iconclose
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 9em;
+    }
+    .wrapper p
+    {
+        font-size: 1.3rem;
+    }
+    .wrapper a
+    {
+        font-size: 1.3rem;
+    }
+    .form-box h2
+    {
+        font-size: 2.8rem;
+        color: #174e19;
+        text-align: center;
+        top: 20px;
+    }
+    .input-box label
+    {
+        font-size: 1.4rem;
+    }
+    .input-box input
+    {
+        font-size: 1.4rem;
+    }
+    .btn
+    {
+        font-size: 1.5rem;
+    }
+    .detailstable
+    {
+        width: 65%;
+        left: 17.5%;
+    }
+    .detailstable h1 img {
+        position: relative;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ownercreation label
+    {
+        font-size: 1.4rem;
+    }
+    .ownercreation input
+    {
+        font-size: 1.3rem;
+        height: 32px;
+    }
+    .buttonbg 
+    {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .btnLogin-popup1 
+    {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1440px)
+{
+    .wrapper
+    {
+        left: 74%;
+    }
+    .wrapper.active
+    {
+        left: 74%;
+    }
+}
+
+@media (max-width: 1366px)
+{
+    .wrapper
+    {
+        height: 430px;
+    }
+    .wrapper.active
+    {
+        height: 830px;
+    }
+    .wrapper p
+    {
+        font-size: 1.1rem;
+    }
+    .wrapper a
+    {
+        font-size: 1.1rem;
+    }
+    .form-box h2
+    {
+        font-size: 2.6rem;
+    }
+    .wrapper .form-box
+    {
+        padding: 6%;
+    }
+    .input-box label
+    {
+        font-size: 1.2rem;
+    }
+    .input-box input
+    {
+        font-size: 1.2rem;
+    }
+    .btn
+    {
+        font-size: 1.3rem;
+        height: 35px;
+    }
+
+
+    .detailstable
+    {
+        width: 70%;
+        left: 15%;
+    }
+    .ownercreation label
+    {
+        font-size: 1.2rem;
+    }
+    .ownercreation input
+    {
+        font-size: 1.1rem;
+        height: 32px;
+    }
+    .buttonbg 
+    {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .btnLogin-popup1 
+    {
+        font-size: 1.1rem;
+    }
+    #certificate 
+    {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1280px)
+{
+    .detailstable
+    {
+        width: 80%;
+        left: 10%;
+    }
+    .form-box h2
+    {
+        font-size: 2.4rem;
+    }
+    .wrapper p
+    {
+        font-size: 1.1rem;
+    }
+    .wrapper a
+    {
+        font-size: 1.1rem;
+    }
+    .logo {
+        height: 40px;
+    }
+    .ownercreation input
+    {
+        height: 26px;
+    }
+    .password-hint {
+        font-size: 1rem;
+    }
+    .remember-forgot
+    {
+        font-size: 1.8rem;
+    }
+    .tooltip .tooltiptext {
+        width: 200px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1128px)
+{
+    .logo {
+        height: 35px;
+    }
+}
+@media (max-width: 1024px)
+{
+    .detailstable
+    {
+        width: 90%;
+        left: 5%;
+        border: 3px solid var(--grey);
+    }
+}
+@media (max-width: 1000px)
+{
+    .detailstable {
+        width: 100%;
+        left: 0%;
+        /* border-top: 3px solid var(--grey);
+        border-bottom: 3px solid var(--grey);
+        border-left: none;
+        border-right: none; */
+        border: none;
+        border-radius: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        border-radius: 0;
+    }
+    .listaccs3d
+    {
+        display: none;
+    }
+    .listaccs3dpicture
+    {
+        display: flex;
+        /* border: solid 1px black; */
+        text-align: center;
+    }
+    .listaccs3dpicture img
+    {
+        width: auto;
+        display: block;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+        height: 100%;
+
+    }
+
+
+}
+@media (max-width: 900px)
+{
+    .detailstable {
+        width: 100%;
+        left: 0%;
+        /* border-top: 3px solid var(--grey);
+        border-bottom: 3px solid var(--grey);
+        border-left: none;
+        border-right: none; */
+        border: none;
+        border-radius: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        border-radius: 0;
+    }
+    .listaccs3d
+    {
+        display: none;
+    }
+    .listaccs3dpicture
+    {
+        display: flex;
+        height: 20vh;
+        /* border: solid 1px black; */
+        text-align: center;
+    }
+    .listaccs3dpicture img
+    {
+        width: auto;
+        display: block;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+        height: 100%;
+
+    }
+
+
+}
+
+@media (max-width: 899px)
+{
+
+    .listaccs3dpicture
+    {
+        height: 18vh;
+        /* border: solid 1px black; */
+    }
+    .btn
+    {
+        font-size: 1.3rem;
+        height: 35px;
+    }
+    .ownercreation label
+    {
+        font-size: 1rem;
+    }
+    .ownercreation input
+    {
+        font-size: 1rem;
+        height: 30px;
+    }
+
+
+
+
+
+
+    .buttonbg 
+    {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .btnLogin-popup1 
+    {
+        font-size: 1.1rem;
+    }
+    #certificate 
+    {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media (max-width: 700px)
+{
+    .ownerinputs {
+        left: 8px;
+        display: grid;
+        width: 78%;
+        gap: 8px;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .ownerinputs input
+    {
+        width: 80%;
+    }
+    .ownername
+    {
+ 
+        align-items: start;
+    }
+    .typeofrequest{
+        width: 100%;
+        /* border: solid 1px black; */
+        padding: 1% 0%;
+        position: relative;
+
+    }
+
+    .reqinputdiv
+    {
+        padding: 0%;
+        border: solid 1px white;
+        background-color: var(--darkgreen);
+        color:#eeeef2;
+        border-radius: 5px;
+        height: 100%;
+        align-items: left;
+        justify-content: left;
+        transition: 0.3s ease;
+        padding: 1% 3%;
+    }
+        .emailinput input,.passwordinput input, .contactinput input, .certificateinput input,.addressinput input,#certificate{
+        font-size: 1rem;
+        height: 25px;
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 400px)
+{
+    .detailstable h1
+    {
+        height: 50px;
+    }
+    .listaccs3dpicture
+    {
+        height: 15vh;
+        /* border: solid 1px black; */
+    }
+    .ownercreation
+    {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .ownerinputs {
+        left: 8px;
+        display: grid;
+        width: 78%;
+        gap: 8px;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .ownerinputs input
+    {
+        width: 100%;
+    }
+    .typeofrequest{
+        width: 100%;
+        /* border: solid 1px black; */
+        padding: 1% 0%;
+        gap: 1%;
+        position: relative;
+
+    }
+
+    .reqinputdiv
+    {
+        padding: 0%;
+        border: solid 1px white;
+        background-color: var(--darkgreen);
+        color:#eeeef2;
+        border-radius: 5px;
+        height: 100%;
+        align-items: left;
+        justify-content: left;
+        transition: 0.3s ease;
+        padding: 1% 3%;
+    }
+    .ownername
+    {
+ 
+        align-items: start;
+    }
+    .emailinput input,.passwordinput input, .contactinput input, .certificateinput input,.addressinput input,#certificate{
+        font-size: 1rem;
+        height: 25px;
+        width: 100%;
+    }
+    .btnLogin-popup1 
+    {
+        font-size: 0.9rem;
+    }
+    
+}
+

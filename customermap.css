@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+}
+body {
+    display: flex;
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: #eeeef2;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('pictures/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+.container {
+    position: absolute;
+    width: 300px; /* Set the width of the container */
+    height: 300px; /* Set the height of the container */
+}
+.providence3dlogo
+{
+  top: 10%;
+  height: 20%;
+  width: auto;
+  z-index: 1000;
+  overflow-y: hidden;
+}
+.sidebackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  width: 20%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+}
+.rightbackground
+{
+  height: 100%;
+  background: linear-gradient(to right, #2c5f41, #1f412d);
+  position: fixed;
+  left: 90%;
+  z-index: 0;
+  top: 0;
+  width: 10%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+  display: grid;
+  box-sizing: border-box;
+  gap: 0;
+}
+.admintext3d
+{
+  top: -50%;
+  height: 100%;
+  width: auto;
+  z-index: 1000;
+}
+.svg-container {
+    position: relative;
+    width: 90%;
+    height: 700px;
+    margin-top: 7%;
+    left: 5%;
+    overflow: hidden;
+    border: 5px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 20px;
+}
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+  .st2:hover {
+    fill: #FFD95A;
+    stroke: #eee;
+    transition: 0.1s;
+  }
+#evergreensection2pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#courtofserenetypathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#solacesectiion1pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#COURTOFTRANQUILITYPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#PIETYESTATESPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#EVERGREENPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#SOLACEPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#tolsection12pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#pathway {
+    fill: none;            /* No fill to keep the background transparent */
+    stroke: #FF9100;           /* Red stroke to match the predefined pathway */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+    stroke-linecap: round; /* Round edges for smoother lines */
+    stroke-linejoin: round; /* Round joins for connecting lines */
+}
+  .messageBox {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 254, 254, 0.9);
+    color: #2A4353;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px; /* Adding rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+  /* Adjusting the arrow to remove it */
+  .messageBox::before {
+    display: none;
+  }
+  .legend {
+    position: relative;
+    left: 5%;
+    top: 20%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    width: auto;
+    max-width: 90%;
+    margin-bottom: 5%;
+    /* border: 1px solid #000; */
+}
+.legend > * { /* Target each child element of .legend */
+    flex-basis: calc(100% / 4); /* Each item takes up 1/6th of the row */
+    box-sizing: border-box;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.st1piety { fill: rgb(194, 71, 118); stroke: transparent; stroke-width: .25; }
+.st1piety:hover { fill: rgb(194, 71, 118); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1reflection { fill: rgb(58, 100, 177); stroke: transparent; stroke-width: .25; }
+.st1reflection:hover { fill: rgb(105, 145, 226); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1solace { fill: rgb(221, 169, 122); stroke: transparent; stroke-width: .25; }
+.st1solace:hover { fill: rgb(177, 136, 98); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1serenity { fill: rgb(207, 106, 135); stroke: transparent; stroke-width: .25; }
+.st1serenity:hover { fill: rgb(237, 143, 167); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1tranquility { fill: rgb(218, 127, 12); stroke: transparent; stroke-width: .25; }
+.st1tranquility:hover { fill: rgb(237, 160, 41); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1evergreen { fill: rgb(136, 78, 160); stroke: transparent; stroke-width: .25; }
+.st1evergreen:hover { fill: rgb(173, 119, 196); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1tapestry { fill: rgb(170, 72, 57); stroke: transparent; stroke-width: .25; }
+.st1tapestry:hover { fill: rgb(219, 94, 77); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1piety-color { background-color: rgb(194, 71, 118); }
+.st1reflection-color { background-color: rgb(58, 100, 177); }
+.st1solace-color { background-color: rgb(221, 169, 122); }
+.st1serenity-color { background-color: rgb(207, 106, 135); }
+.st1tranquility-color { background-color: rgb(218, 127, 12); }
+.st1evergreen-color { background-color: rgb(136, 78, 160); }
+.st1tapestry-color { background-color: rgb(170, 72, 57); }
+.st1person-color {     background-color: #FF9100;
+                        border: solid 4px #1d5127;
+                        border-radius: 50%;}
+    .searchline {
+        position: relative;
+        width: 90%;
+        flex-direction: row; /* Ensure items are aligned horizontally */
+        left: 5%;
+    }
+    .searchline h1
+    {
+        position: relative;
+        left: -3%;
+        /* border: #000 solid 1px; */
+    }
+    .searchline h1 img
+    {
+        width: 40%;
+        /* border: #000 solid 1px; */
+    }
+    .searchline h2
+    {
+        margin-top: 2%;
+        left: -3%;
+        position: relative;
+        /* border: #000 solid 1px; */
+    }
+    .searchline h2 img
+    {
+        width: 40%;
+    }
+.search-container {
+    position: relative;
+    margin-top: 5%; /* Add some space between search bar and search result */
+    top: 10%;
+    width: 100%;
+    margin-right: 20%;
+    height: auto;
+    /* border: solid 1px #000; */
+}
+.search-bar {
+    position: relative;
+    padding: 8px 12px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.search-bar input {
+    padding: 8px;
+    width: 100%;
+    border: 3px solid #328636;
+    border-radius: 4px;
+}
+.search-bar span {
+font-size: 20px;
+}
+#searchresult {
+    position: absolute;
+    z-index: 20;
+    background-color: #f1f1f1;
+    align-items: center;
+    border-radius: 2%;
+    top: 90%;
+    font-size: 13px;
+    width: 65%; /* Adjust width as needed */
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow at the bottom */
+}
+.searchresult div {
+    padding: 10px;
+    cursor: pointer;
+}
+.searchresult div:hover {
+    background-color: #d8d8d8;
+}
+.white-box {
+    position: relative;
+    min-height: 200px;
+    height: 40%;
+    left: 1% ;
+    width: 98%;
+    border: 3px solid #328636;
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.white-box p
+{
+    color: #000;
+}
+.locate {
+    position: relative;
+    margin-left: 10%;
+    color: #eeeef2;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #3da542, #7fd175, #3da542, #7fd175, #3da542);
+    padding: 10px 60px;
+    border-color: #FFD95A;
+    border-style: solid;
+    background-clip: padding-box; /* Correct value */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.89); /* Shadow for depth */
+}
+.locate a {
+    text-decoration: none;
+    color: #eeeef2;
+    font-weight: bold;
+}
+@keyframes glow {
+    0% { fill: #ffffff; }
+    50% { fill: #ff0000; }
+    100% { fill: #ffffff; }
+}
+.glow {
+    animation: glow 1.5s infinite;
+    stroke: red; /* Optional, to highlight border */
+    stroke-width: 3; /* Optional, to make border visible */
+    stroke-opacity: 0.8; /* Optional, to adjust border visibility */
+}
+@keyframes highlight {
+    0% { fill: #ffffff; }
+    50% { fill: #ff0000; }
+    100% { fill: #ffffff; }
+}
+.highlight {
+    animation: glow 1.5s infinite;
+    stroke: red; /* Optional, to highlight border */
+    stroke-width: 3; /* Optional, to make border visible */
+    stroke-opacity: 0.8; /* Optional, to adjust border visibility */
+}
+.vacants {
+    position: absolute;
+    top: 55%;
+    left: 68%;
+    color: #eeeef2;
+    font-size: 15px;
+    transform: translateY(90%);
+    background-image: linear-gradient(to right, #3da542, #7fd175, #3da542, #7fd175, #3da542);
+    padding: 10px 60px;
+    border-color: #FFD95A;
+    border-style: solid;
+    background-clip: padding-box; /* Correct value */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.89); /* Shadow for depth */
+}
+.vacants a {
+    text-decoration: none;
+    color: #eeeef2;
+    font-weight: bold;
+}
+.navlogo {
+    position: relative;
+    width: 240px;
+    height: 60px;
+    background: #eeeef2 url("pictures/providencelogowithtext.png") no-repeat;
+    background-size: contain;
+    background-position: center; /* Center the background image */
+    margin-bottom: 20px;
+    z-index: 1000;
+    top: 10px;
+    border-radius: 5px;
+}
+.navlogo:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease;
+}
+.navlogo:not(:hover) {
+    transition: transform 0.3s ease;
+    transform: scale(1); /* Zoom back out when not hovered */
+}
+.layout {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    left: 20%;
+    border-top: 10px solid #367952;
+    /* border-right: 10px solid #367952;  */
+    /* border-left: 10px solid #367952;  */
+    border-bottom: none;
+    backdrop-filter: blur(7px);
+    background-color: #eeeef2;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.layout h1{
+    position: absolute;
+    top: 2%;
+    left: 25%;
+    /* border: solid 1px black; */
+}
+.layout h1 img
+{
+    width:60%;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #367952, #1f412d);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 10px solid #306e4a;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    transition: width 0.5s ease;
+    z-index: 999;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+  }
+.sidebar .logo {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-bottom: 10%;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+.logo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .logo h2,
+.sidebar .logo h2:hover {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.sidebar .links {
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 100%;
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li span{
+    color: #eeeef2;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #59cc89;
+}
+.links h4 {
+    color: #eeeef2;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .links h4,
+.sidebar .links li:hover h4 {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.sidebar .links hr,
+.sidebar .links li:hover hr {
+    border-color: transparent;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.links li span {
+    padding: 12px 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.links li a {
+    padding: 10px;
+    color: #eeeef2;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .links li a,
+.sidebar .links li:hover a {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.personstart {
+    fill: #FF9100;
+    stroke: #1d5127;
+    stroke-width: 2px;
+    animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+        r: 6.3; /* Initial radius */
+    }
+    25% {
+        r: 7.5; /* Quick increase in radius */
+    }
+    40% {
+        r: 6.3; /* Back to initial radius */
+    }
+    60% {
+        r: 7; /* Smaller increase in radius */
+    }
+    80% {
+        r: 6.3; /* Back to initial radius */
+    }
+}
+.toggle-btn
+{
+    position: fixed;
+    display: block;
+    right: 2%;
+    top: 5%;
+    border-color: #16423C;
+    width: 20%;
+    height: 10%;
+}
+.toggle-btn ion-icon
+{
+    /* display: none; */
+    font-size: 10px;
+}
+.dropdown-menu
+{
+    position: fixed;
+    display: none;
+    width: 60%;
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: -100%;
+    z-index: 6;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    height: 100vh;
+    transition: right 0.3s ease;
+}
+.dropdown-menu.show {
+    right: 0;
+}
+.close-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+.dropdown-menu li
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.dropdown-menu h4
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.dropdown-menu li a
+{
+    font-size: 1.2rem;
+}
+.logosidebar {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-bottom: 10%;
+}
+.logosidebar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+.logosidebar h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+    color: var(--black);
+}
+@keyframes logoAnimation
+{
+	0%
+	{
+		top: 0%;
+	}
+	100%
+	{
+		top: 50%;
+	}
+}

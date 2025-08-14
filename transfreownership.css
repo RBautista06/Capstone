@@ -1,0 +1,1183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: #eeeef2;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('pictures/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+.providence3dlogo
+{
+  top: 10%;
+  height: 20%;
+  width: auto;
+  z-index: 1000;
+  overflow-y: hidden;
+}
+.sidebackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  width: 20%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+}
+.rightbackground
+{
+  height: 100%;
+  background: linear-gradient(to right, #2c5f41, #1f412d);
+  position: fixed;
+  left: 90%;
+  z-index: 0;
+  top: 0;
+  width: 10%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+  display: grid;
+  box-sizing: border-box;
+  gap: 0;
+}
+.admintext3d
+{
+  top: -50%;
+  height: 100%;
+  width: auto;
+  z-index: 1000;
+}
+.internmentform {
+    position: relative;
+    background-color: #eeeef2;
+    width: 70%;
+    height: 100%;
+    left: 20%;
+    align-items: center;
+    border-top: 10px solid #367952;
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+    padding-top: 1%;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+    overflow-x: hidden;
+}
+.internmentform h1
+    {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    }
+.internmentform h1 img
+{
+    width:35%;
+}
+.Fillupform h1 {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    left: 0%;
+    /* border: solid 1px black; */
+}
+.Fillupform h1 img
+{
+    width:40%;
+}
+.detailsbox {
+    top: -5%;
+    padding: 1%;
+    left: 5%;
+    position: relative;
+    height: auto;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 15px #bfbfbf;
+    background-color: #eeeef2;
+    border-radius: 15px;
+}
+.toggle-btn
+{
+    position: fixed;
+    display: block;
+    right: 2%;
+    top: 5%;
+    border-color: #16423C;
+    width: 20%;
+    height: 10%;
+}
+.toggle-btn ion-icon
+{
+    /* display: none; */
+    font-size: 10px;
+}
+.dropdown-menu
+{
+    position: fixed;
+    display: none;
+    width: 60%;
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: -100%;
+    z-index: 6;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    height: 100vh;
+    transition: right 0.3s ease;
+}
+.dropdown-menu.show {
+    right: 0;
+}
+.close-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+.dropdown-menu li
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.dropdown-menu h4
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.dropdown-menu li a
+{
+    font-size: 1.2rem;
+}
+.logosidebar {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-bottom: 10%;
+}
+.logosidebar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+.logosidebar h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+    color: var(--black);
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #367952, #1f412d);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 10px solid #306e4a;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    transition: width 0.5s ease;
+    z-index: 999;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+  }
+.sidebar .logo {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-bottom: 10%;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+.logo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .logo h2,
+.sidebar .logo h2:hover {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.sidebar .links {
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 100%;
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li span{
+    color: #eeeef2;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #59cc89;
+}
+.links h4 {
+    color: #eeeef2;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .links h4,
+.sidebar .links li:hover h4 {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.sidebar .links hr,
+.sidebar .links li:hover hr {
+    border-color: transparent;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.links li span {
+    padding: 12px 10px;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.links li a {
+    padding: 10px;
+    color: #eeeef2;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add a transition for smoother text effect */
+}
+.sidebar .links li a,
+.sidebar .links li:hover a {
+    display: block;
+    color: #eeeef2; /* Add the desired color on hover */
+}
+.svg-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border: 5px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 15px;
+}
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+  @keyframes glow {
+    0% { fill: #ffffff; }
+    50% { fill: #ff0000; }
+    100% { fill: #ffffff; }
+}
+.glow {
+    animation: glow 3s infinite;
+}
+.st1piety{
+    fill:rgb(194, 71, 118);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1piety:hover {
+    fill: rgb(194, 71, 118);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1reflection{
+    fill:rgb(158, 17, 177);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1reflection:hover {
+    fill: rgb(205, 45, 226);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1solace{
+    fill:rgb(221, 69, 122);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1solace:hover {
+    fill: rgb(177, 56, 98);
+    stroke:transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1serenity{
+    fill:rgb(166, 53, 170);
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1serenity:hover {
+    fill: rgb(209, 63, 214);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tranquility{
+    fill:rgb(68, 27, 163);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1tranquility:hover {
+    fill: rgb(87, 35, 207);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1evergreen{
+    fill:rgb(216, 71, 84);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1evergreen:hover {
+    fill: rgb(230, 37, 53);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tapestry{
+    fill:rgb(170, 72, 7);
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1tapestry:hover {
+    fill: rgb(219, 94, 11);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.legend {
+    width: 100%;
+    margin-top: 5%;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 20px;
+    font-size: 13px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 2%;
+}
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.st1piety { fill: rgb(194, 71, 118); stroke: transparent; stroke-width: .25; }
+.st1piety:hover { fill: rgb(194, 71, 118); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1reflection { fill: rgb(58, 100, 177); stroke: transparent; stroke-width: .25; }
+.st1reflection:hover { fill: rgb(105, 145, 226); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1solace { fill: rgb(221, 169, 122); stroke: transparent; stroke-width: .25; }
+.st1solace:hover { fill: rgb(177, 136, 98); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1serenity { fill: rgb(207, 106, 135); stroke: transparent; stroke-width: .25; }
+.st1serenity:hover { fill: rgb(237, 143, 167); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1tranquility { fill: rgb(218, 127, 12); stroke: transparent; stroke-width: .25; }
+.st1tranquility:hover { fill: rgb(237, 160, 41); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1evergreen { fill: rgb(136, 78, 160); stroke: transparent; stroke-width: .25; }
+.st1evergreen:hover { fill: rgb(173, 119, 196); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1tapestry { fill: rgb(170, 72, 57); stroke: transparent; stroke-width: .25; }
+.st1tapestry:hover { fill: rgb(219, 94, 77); stroke: transparent; transition: 0.6s; cursor: pointer; }
+.st1piety-color { background-color: rgb(194, 71, 118); }
+.st1reflection-color { background-color: rgb(58, 100, 177); }
+.st1solace-color { background-color: rgb(221, 169, 122); }
+.st1serenity-color { background-color: rgb(207, 106, 135); }
+.st1tranquility-color { background-color: rgb(218, 127, 12); }
+.st1evergreen-color { background-color: rgb(136, 78, 160); }
+.st1tapestry-color { background-color: rgb(170, 72, 57); }
+.search-container {
+    position: absolute;
+    margin-top: 20px; /* Add some space between search bar and search result */
+    top: 17%;
+    left: 52%;
+    height: auto;
+}
+.btnLogin-popup1 {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 8px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    font-family: Arial, sans-serif; /* Font style */
+    margin-left: 3%;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+.btnLogin-popup1:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+.DeedofTransfer
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.DeedofTransfer .transfer {
+    text-align: justify; /* Justify text */
+}
+.DeedofTransfer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.DeedofTransfer span {
+    margin: 15px 0; /* Space between paragraphs */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.deedofrightext
+{
+    position: relative;
+    width: 90%;
+    border: 2px solid #B99470;
+    background-color: #FFF8E8;
+    left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    border-radius: 20px;
+}
+.jointaffidavitttext
+{
+    position: relative;
+    width: 90%;
+    border: 2px solid #B99470;
+    background-color: #FFF8E8;
+    left: 5%;
+       padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px;
+}
+.DeedofTransfer h1 {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    margin-top: 2%;
+    left: 20%;
+}
+.DeedofTransfer input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #266529;
+    padding: 5px;
+    width: auto; /* Adjust to content */
+    margin: 0 5px;
+    color: #328636;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+}
+.DeedofTransfer input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid #328636; /* Highlight border on focus */
+}
+.DeedofTransfer input[type="text"]::placeholder {/* Italicize placeholder text */
+    text-align: left;
+}
+#selectedLotDescription1, #selectedLotDescription2 {
+    display: flex; /* Flex display for centering */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    font-weight: bold;
+}
+#status-text, #spouse-name {
+    display: inline; /* Inline display for status text and spouse name */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#spouse-name input {
+    width: auto; /* Adjust width for spouse name input */
+}
+.Fillupform {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow:  0 0 15px #bfbfbf;
+    border: 1px solid #ccc;
+    line-height: 1.6;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.DeedofTransfer {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    margin-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow:  0 0 15px #bfbfbf;
+    border: 1px solid #ccc;
+    line-height: 1.6;
+    border-radius: 20px;
+    justify-content: center; /* Centers the child element horizontally */
+    align-items: center;
+}
+.transfer {
+    margin-bottom: 30px;
+    justify-content: center; /* Centers the child element horizontally */
+    align-items: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.transfer h1
+{
+    display: flex;
+    align-items: center;
+    left: 0;
+    margin-bottom: 1%;
+}
+.transferfillup {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #328636;
+    padding: 4% 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.transferfillup input{
+    color: #328636;
+    background-color: transparent;
+    text-align: center;
+}
+.transferor-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* Space between the inputs */
+}
+.transferor-container label {
+    margin-right: 10px; /* Space between the label and the first input */
+}
+.transferor-container input[type="text"] {
+    flex: 1;
+    min-width: 150px; /* Adjust as needed */
+    color: #328636;
+    text-align: center;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+.locationsite {
+    margin-top: 3vh;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    /* border: solid 1px black; */
+}
+.locationsite label{
+    width: 25%;
+    /* border: solid 1px black; */
+}
+.locationsite select
+{
+    padding: 1% 2%;
+    border-radius: 5px;
+    border: none;
+    background-color: #1b461d;
+    color: #fefefe;
+}
+p {
+    margin-bottom: 10px;
+}
+#selectedLotDescription {
+    display: inline-block;
+    font-weight: bold;
+}
+p input[type="text"], p select {
+    display: inline-block;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+p > div {
+    display: inline;
+}
+#spouse-name {
+    margin-left: 5px;
+}
+#transferor-spouse {
+    display: block;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+input[type="text"]:focus {
+    border-bottom: 1px solid #328636;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: vertical;
+}
+#sign_date, #sign_city, #notary_place, #notary_date, #notary_date_day {
+    display: inline-block;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#contractNumber, #contractNumber1, #contractNumber2 {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+p > input[type="text"], p > input[type="hidden"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding: 0;
+    font-size: 1em;
+    width: auto;
+}
+#contractPrice{
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding: 0;
+    font-size: 1em;
+    width: auto;
+    min-width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+@media print {
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+    input[type="text"], select {
+        border: none;
+    }
+    input[type="text"]::placeholder {
+        color: black;
+    }
+}
+/* Container for the transferor's name inputs */
+.status-container {
+    display: flex;
+    flex-direction: column;
+}
+.status-item {
+    display: inline-flex;
+    align-items: center;
+    /* border: solid 1px black; */
+    margin-right: 3vh; /* Space between each status item */
+    padding-bottom: 0%;
+}
+.status-item p
+{
+    align-items: center;
+    /* border: solid 2px red; */
+    margin-bottom: 0;
+    /* height: 100%; */
+}
+.status-item input
+{
+    margin-right: 1vh;
+}
+.status-row {
+    display: flex;
+    width: 100%;
+}
+.status-row label{
+    margin-right: 2%;
+    width: 23%;
+}
+/* Optional: Style for the labels */
+.status-container p {
+    margin: 0;
+ /* Space between the title and radio buttons */
+}
+/* Container for the transferee's name inputs */
+.extrafield,
+.extra-fields-transferee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between the inputs */
+}
+.extrafield label,
+.extra-fields-transferee label{
+    margin-right: 13%;
+}
+.transferorfiles
+{
+    display: flex;
+}
+.transferorfiles .label
+{
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    /* border: solid 1px black; */
+}
+.transferorfiles .file-container
+{
+    /* border: solid 1px black; */
+    width: 100%;
+    display: grid;
+    align-items: center;
+    row-gap: 1vh;
+    margin-top: 2.5vh;
+}
+.transferorfiles .file-container .transferor-file-input
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+    margin-left: 25%;
+    width: 75%;
+    align-items: center;
+        border-bottom: solid 3px #dedede;
+        /* padding: 0% 2%; */
+        border-radius: 5px;;
+    /* border: solid 1px red; */
+}
+.transferor-file-input p
+{
+    font-size: 15px;
+    margin-bottom: 0%;
+    /* border: solid 1px black; */
+}
+.transferor-file-input input
+{
+    /* border: solid 1px black; */
+    align-items: center;
+}
+.transferor-file-input input[type="file"]
+{
+    color: #16423C;
+    /* background-color: #dedede; */
+    padding: 2%;
+    border-radius: 5px;
+}
+.transferor-file-input input[type="file"]::file-selector-button
+{
+    background-color: #4CAF50;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fefefe;
+}
+.transferorfiles .transferee-file-container
+{
+    /* border: solid 1px black; */
+    width: 100%;
+    display: grid;
+    align-items: center;
+    row-gap: 1vh;
+    margin-top: 2.5vh;
+}
+.transferorfiles .transferee-file-container .transferee-file-input
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+    margin-left: 25%;
+    width: 75%;
+    align-items: center;
+        border-bottom: solid 3px #dedede;
+        /* padding: 0% 2%; */
+        border-radius: 5px;;
+    /* border: solid 1px red; */
+}
+.transferee-file-input p
+{
+    font-size: 15px;
+    margin-bottom: 0%;
+    /* border: solid 1px black; */
+}
+.transferee-file-input input
+{
+    /* border: solid 1px black; */
+    align-items: center;
+}
+.transferee-file-input input[type="file"]
+{
+    color: #16423C;
+    /* background-color: #dedede; */
+    padding: 2%;
+    border-radius: 5px;
+}
+.transferee-file-input input[type="file"]::file-selector-button
+{
+    background-color: #4CAF50;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fefefe;
+}
+.nameoftransferee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* Space between the inputs */
+}
+.nameoftransferee label {
+    margin-right: 10px;
+    width: 23%; /* Space between the label and the first input */
+}
+.nameoftransferee input[type="text"] {
+    flex: 1;
+    min-width: 180px; /* Adjust width as needed */
+}
+.addressoftransferee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* Space between the inputs */
+}
+.addressoftransferee label {
+    width: 23%;
+    margin-right: 10px; /* Space between the label and the first input */
+}
+.addressoftransferee input[type="text"] {
+    flex: 1;
+    min-width: 180px; /* Adjust width as needed */
+}
+.contractPrice {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    gap: 10px; /* Space between the inputs */
+    margin-top: 2%;
+}
+.contractPrice label {
+    margin-right: 10px; /* Space between the label and the first input */
+}
+.contractPrice input[type="text"] {
+    flex: 1;
+    min-width: 180px; /* Adjust width as needed */
+}
+.personappeared {
+    justify-content: center; /* Centers the child element horizontally */
+    align-items: center;
+    width: 100%;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.personappeared th, .personappeared td {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+.personappeared td input {
+    width: 100%;
+    text-align: center;
+}
+.decinterment
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    background-color: transparent;
+}
+.decinterment input
+{
+    width: 15%;
+    height: 30px;
+    color: #328636;
+    border: none;
+    border-bottom: 2px solid #328636;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+.prices
+{
+    display: grid;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    width: 50%;
+    padding: 2%;
+    background-color: #1b461d;
+    border: 3px solid #328636;
+    color: #eeeef2;
+}
+.prices input
+{
+    width: 50%;
+    height: 30px;
+    color: #eeeef2;
+    border: none;
+    border-bottom: 2px solid #FFF8E8;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+.payment {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+}
+.payment input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 1%;
+    margin-left: 2%;
+    border: 2px solid #328636;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.payment input[type="radio"]:checked::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #328636;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.notes
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #1b461d;
+    border: 3px solid #328636;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 10%;
+    padding: 2%;
+}
+.notes label {
+    font-size: 18px;
+    color: #eeeef2;
+    width: 100%; /* Make the label take full width */
+    display: flex; /* Flexbox layout to help center text */
+    margin-bottom: 2%;
+}
+.notes p {
+    color: #eeeef2;
+    font-size: 15px;
+}
+.requirements
+{
+    margin-top: 2%;
+    background-color: #1b461d;
+    border: 3px solid #328636;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 10%;
+    padding: 2%;
+}
+.requirements label {
+    font-size: 18px;
+    color: #eeeef2;
+    width: 100%; /* Make the label take full width */
+    display: flex; /* Flexbox layout to help center text */
+    margin-bottom: 2%;
+}
+.requirements p {
+    color: #eeeef2;
+    font-size: 15px;
+}
+.reqshit
+{
+    display: flex;
+    width: 100%;
+}
+.pricestab
+{
+    display: flex;
+}
+.pay3d {
+    width: 50%;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+.payment3d
+{
+    width: 100%;
+    height: 100%;
+}
+.files3d
+{
+    width: 80%;
+    height: 40%;
+}
+.enter
+{
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    width: 90%;
+    left: 5%;
+    padding: 10px;
+    background: linear-gradient(to right, #428144, #1b461d);
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-direction: column; /* Stack items vertically (optional based on layout) */
+}
+.btnLogin-popup {
+    margin-right: 10px;
+    min-width: 60px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: #ffffff;
+    background: #4fd16b;
+    background: linear-gradient(90deg, #235f26 0%, #3da542 100%);
+    border: 5px solid white;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  .btnLogin-popup::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(32px + 130px);
+    min-height: calc(28px + 15px);
+    border: 2px solid #4fd16b;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  .btnLogin-popup:hover, .btnLogin-popup:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+  }
+  .btnLogin-popup:hover::before, .btnLogin-popup:focus::before {
+    opacity: 1;
+  }
+#evergreensection2pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#courtofserenetypathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#solacesectiion1pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#COURTOFTRANQUILITYPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#PIETYESTATESPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#EVERGREENPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#SOLACEPATHS {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#tolsection12pathway {
+    fill: none;            /* No fill to prevent any black background */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+}
+#pathway {
+    fill: none;            /* No fill to keep the background transparent */
+    stroke: #FF9100;           /* Red stroke to match the predefined pathway */
+    stroke-width: 2px;     /* Set the thickness of the stroke */
+    stroke-linecap: round; /* Round edges for smoother lines */
+    stroke-linejoin: round; /* Round joins for connecting lines */
+}

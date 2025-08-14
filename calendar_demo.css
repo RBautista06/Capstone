@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+#calendar-container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #eeeef2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+}
+
+th {
+    height: 40px;
+    background-color: #3da542;
+    color: #eeeef2;
+    font-weight: normal;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+td {
+    width: 14.28%;
+    height: 150px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+
+td.today {
+    background-color: #b7e0b4;
+    font-weight: bold;
+}
+
+.notification-container {
+    position: relative;
+    bottom: 5px;
+    padding-top: 10px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.notification {
+    background-color: #4caf50;
+    color: #eeeef2;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: static;
+}
+
+#month-selector {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    position: relative;
+}
+
+#month-selector select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#month-selector button {
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

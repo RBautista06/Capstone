@@ -1,0 +1,4224 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+
+@media (max-width: 1760px)
+{
+
+
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 90%;
+        padding: 2%; 
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 15px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 28px;
+        padding-left: 1%;
+        font-size: 15px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 28px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 28px;
+    }
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 15px;
+
+    }
+
+    .notes
+    {
+        width: 90%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 17px;
+    }
+    .notes p {
+        font-size: 15px;
+    }
+
+    .unterdatikings
+    {
+        width: 90%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 17px;
+    }
+    .unterdatikings p {
+        font-size: 15px;
+    }
+
+
+    .vaulttype p
+    {
+        font-size: 15px;
+    }
+    .vaulttype label
+    {
+        font-size: 15px;
+    }
+    .requirements label
+    {
+        font-size: 15px;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 8px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .notings p
+    {
+        font-size: 15px;
+    }
+    .serviceorder label
+    {
+        font-size: 15px;
+    }
+    .intermentoptions label
+    {
+        font-size: 15px;
+    }
+    .courts label
+    {
+        font-size: 15px;
+    }
+    .Estates label
+    {
+        font-size: 15px;
+    }
+    .service label
+    {
+        font-size: 15px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 28px;
+        font-size: 15px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 28px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 15px;
+    
+    }
+    .coffin label{
+        font-size: 15px;
+    }
+    .locationsite label
+    {
+        font-size: 15px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 15px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 15px;
+    }
+    .btnLogin-popup1 {
+        font-size: 15px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 450px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 15px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 15px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 15px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 15px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 15px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 15px;
+    }
+    .others input
+    {
+        font-size: 15px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 15px;
+    }
+    .enter button
+    {
+        font-size: 15px;
+    }
+
+
+    
+    
+        
+
+}
+
+@media (max-width: 1440px)
+{
+
+
+    .priority
+    {
+      width: 100%;
+      left: 2.5%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 13px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 13px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 13px;
+    }
+    select
+    {
+        font-size: 13px;
+    }
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 13px;
+
+    }
+
+    .notes
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 13px;
+    }
+    .notes p {
+        font-size: 13px;
+    }
+
+    .unterdatikings
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 13px;
+    }
+    .unterdatikings p {
+        font-size: 13px;
+    }
+
+    .vaulttype p
+    {
+        font-size: 13px;
+    }
+    .vaulttype label
+    {
+        font-size: 13px;
+    }
+    .requirements label
+    {
+        font-size: 13px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 13px;
+    }
+    .notings p
+    {
+        font-size: 13px;
+    }
+    .serviceorder label
+    {
+        font-size: 13px;
+    }
+    .intermentoptions label
+    {
+        font-size: 13px;
+    }
+    .courts label
+    {
+        font-size: 13px;
+    }
+    .Estates label
+    {
+        font-size: 13px;
+    }
+    .service label
+    {
+        font-size: 13px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 13px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 13px;
+    
+    }
+    .coffin label{
+        font-size: 13px;
+    }
+    .locationsite label
+    {
+        font-size: 13px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 13px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 13px;
+    }
+    .btnLogin-popup1 {
+        font-size: 13px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 450px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 13px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 13px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 13px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 13px;
+    }
+    .others input
+    {
+        font-size: 13px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 13px;
+    }
+    .enter button
+    {
+        font-size: 13px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+}
+@media (max-width: 1280px)
+{
+
+
+    .priority
+    {
+      width: 100%;
+      left: 2.5%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 11px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 11px;
+
+    }
+
+    .notes
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 11px;
+    }
+    .notes p {
+        font-size: 11px;
+    }
+
+    .unterdatikings
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 11px;
+    }
+    .unterdatikings p {
+        font-size: 11px;
+    }
+    
+    .vaulttype p
+    {
+        font-size: 11px;
+    }
+    .vaulttype label
+    {
+        font-size: 11px;
+    }
+    .requirements label
+    {
+        font-size: 11px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 11px;
+    }
+    .notings p
+    {
+        font-size: 11px;
+    }
+    .serviceorder label
+    {
+        font-size: 11px;
+    }
+    .intermentoptions label
+    {
+        font-size: 11px;
+    }
+    .courts label
+    {
+        font-size: 11px;
+    }
+    .Estates label
+    {
+        font-size: 11px;
+    }
+    .service label
+    {
+        font-size: 11px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 11px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 11px;
+    
+    }
+    .coffin label{
+        font-size: 11px;
+    }
+    .locationsite label
+    {
+        font-size: 11px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 11px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 11px;
+    }
+    .btnLogin-popup1 {
+        font-size: 11px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 11px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 11px;
+    }
+    .others input
+    {
+        font-size: 11px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 11px;
+    }
+    .enter button
+    {
+        font-size: 11px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 7px;
+        height: 7px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1280px)
+{
+
+
+    .priority
+    {
+      width: 100%;
+      left: 2.5%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 11px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 11px;
+
+    }
+
+    .notes
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 11px;
+    }
+    .notes p {
+        font-size: 11px;
+    }
+
+    .unterdatikings
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 11px;
+    }
+    .unterdatikings p {
+        font-size: 11px;
+    }
+
+    .vaulttype p
+    {
+        font-size: 11px;
+    }
+    .vaulttype label
+    {
+        font-size: 11px;
+    }
+    .requirements label
+    {
+        font-size: 11px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 11px;
+    }
+    .notings p
+    {
+        font-size: 11px;
+    }
+    .serviceorder label
+    {
+        font-size: 11px;
+    }
+    .intermentoptions label
+    {
+        font-size: 11px;
+    }
+    .courts label
+    {
+        font-size: 11px;
+    }
+    .Estates label
+    {
+        font-size: 11px;
+    }
+    .service label
+    {
+        font-size: 11px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 11px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 11px;
+    
+    }
+    .coffin label{
+        font-size: 11px;
+    }
+    .locationsite label
+    {
+        font-size: 11px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 11px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 11px;
+    }
+    .btnLogin-popup1 {
+        font-size: 11px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 11px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 11px;
+    }
+    .others input
+    {
+        font-size: 11px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 11px;
+    }
+    .enter button
+    {
+        font-size: 11px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 7px;
+        height: 7px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+/*MOBILE VIEW*/
+@media (max-width: 1000px)
+{
+
+    .layout
+    {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        left: 0;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left: 2.5%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 11px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 11px;
+    }
+
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 11px;
+
+    }
+
+    .notes
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 11px;
+    }
+    .notes p {
+        font-size: 11px;
+    }
+
+    .unterdatikings
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 11px;
+    }
+    .unterdatikings p {
+        font-size: 11px;
+    }
+
+    .vaulttype p
+    {
+        font-size: 11px;
+    }
+    .vaulttype label
+    {
+        font-size: 11px;
+    }
+    .requirements label
+    {
+        font-size: 11px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 11px;
+    }
+    .notings p
+    {
+        font-size: 11px;
+    }
+    .serviceorder label
+    {
+        font-size: 11px;
+    }
+    .intermentoptions label
+    {
+        font-size: 11px;
+    }
+    .courts label
+    {
+        font-size: 11px;
+    }
+    .Estates label
+    {
+        font-size: 11px;
+    }
+    .service label
+    {
+        font-size: 11px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 11px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 11px;
+    
+    }
+    .coffin label{
+        font-size: 11px;
+    }
+    .locationsite label
+    {
+        font-size: 11px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 11px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 11px;
+    }
+    .btnLogin-popup1 {
+        font-size: 11px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 11px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 11px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 11px;
+    }
+    .others input
+    {
+        font-size: 11px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 11px;
+    }
+    .enter button
+    {
+        font-size: 11px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 7px;
+        height: 7px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .remains-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+
+    .layout
+    {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        left: 0;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left: 2.5%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 10px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 10px;
+    }
+
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+
+    }
+
+    .notes
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 95%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts label
+    {
+        font-size: 10px;
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 7px;
+        height: 7px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+
+    .layout
+    {
+        width: 100%;
+        padding: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        left: 0;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left:0%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        
+        display: inline-flex;
+        margin-bottom: 1%;
+    }
+    .decname label
+    {
+        font-size: 10px;
+    }
+
+    .decname input {
+        width: 70%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .decdates input
+    {
+        width: 20%;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .decinterment
+    {
+        width: 100%;
+    }
+    .decinterment input
+    {
+        width: 15%;
+        height: 25px;
+        font-size: 10px;
+    }
+    .remains-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        /* border: solid 1px black; */
+    }
+
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+
+    }
+
+    .notes
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts label
+    {
+        font-size: 10px;
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 80%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 5 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 80%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 80%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 7px;
+        height: 7px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 11px;
+    }
+    .remains,.vaulttype,.requirements,.serviceorder,
+    .notings,.intermentstype,.service,.others,.prices,
+    .enter
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px)
+{
+
+    .layout
+    {
+        width: 100%;
+        padding: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        left: 0;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left:0%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: grid;
+        margin-bottom: 5%;
+    }
+    .decname label
+    {
+        font-size: 11px;
+        margin-bottom: 1%;
+        margin-top: 0%;
+    }
+
+    .decname input {
+
+        width: 80%;
+        margin-left: 20%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 11px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: grid;
+        margin-bottom: 5%;
+        gap: 0;
+    }
+
+    .decdates label
+    {
+        font-size: 11px;
+    }
+    .decdates input
+    {
+        width: 100%;
+        margin-left: 70%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+
+    .decinterment
+    {
+        width: 100%;
+        display: grid;
+    }
+    .decinterment input
+    {
+        width: 100%;
+        margin-left: 70%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .decinterment select
+    {
+        width: 100%;
+        margin-left: 70%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+
+
+    
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+
+    }
+    
+    .notes
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+    .vault-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions
+    {
+        width: 100%;
+    }
+    .intermentstype
+    {
+        display: grid;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts
+    {
+        width: 100%;
+        /* border: solid 1px black; */
+    }
+    .courts4options
+    {
+        width: 100%;
+    }
+    .courts label
+    {
+        font-size: 10px;
+        
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 100%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 3 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .prices input
+    {
+        width: 40%;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 11px;
+        height: 11px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 11px;
+    }
+    .remains,.vaulttype,.requirements,.serviceorder,
+    .notings,.intermentstype,.service,.others,.prices,
+    .enter
+    {
+        width: 100%;
+    }
+    .locationsite{
+        display: grid;
+    }
+    .locationsite select {
+        padding: 5px;
+        font-size: 11px;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .locationsite button {
+
+        margin-left: 0%;
+        font-size: 11px;
+        margin-bottom: 2%;
+
+    }
+}
+
+
+@media (max-width: 400px)
+{
+
+    .remains-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .layout
+    {
+        width: 100%;
+        padding: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        left: 0;
+    }
+    .layout h1 img
+    {
+        height: 30px;
+        width: 70%;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left:0%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2%;
+    }
+
+     .decname
+    {
+        gap: 2%; 
+        display: grid;
+        margin-bottom: 5%;
+    }
+    .decname label
+    {
+        font-size: 10px;
+        margin-bottom: 1%;
+        margin-top: 0%;
+    }
+
+    .decname input {
+
+        width: 80%;
+        margin-left: 20%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 10px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .decdates label
+    {
+        font-size: 10px;
+         width: 100%;
+    }
+    .decdates input
+    {
+        width: 100%;
+         text-align: center;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+
+    .decinterment
+    {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    
+    .decinterment label
+    {
+        text-align: left;
+        font-size: 10px;
+         width: 100%;
+    }
+    .decinterment input
+    {
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .decinterment select
+    {
+         text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+
+    .remains {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .remains p {
+        margin-bottom: 10px;
+    }
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    
+    .notes
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+    .vault-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions
+    {
+        width: 100%;
+    }
+    .intermentstype
+    {
+        display: grid;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts
+    {
+        width: 100%;
+        /* border: solid 1px black; */
+    }
+    .courts4options
+    {
+        width: 100%;
+    }
+    .courts label
+    {
+        font-size: 10px;
+        
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 100%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 3 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .prices input
+    {
+        width: 40%;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 11px;
+        height: 11px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 10px;
+    }
+    .remains,.vaulttype,.requirements,.serviceorder,
+    .notings,.intermentstype,.service,.others,.prices,
+    .enter
+    {
+        width: 100%;
+    }
+    .locationsite{
+        display: grid;
+    }
+    .locationsite select {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .locationsite button {
+
+        margin-left: 0%;
+        font-size: 10px;
+        margin-bottom: 2%;
+
+    }
+}
+@media (max-width: 350px) {
+
+
+    .remains-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .layout
+    {
+        width: 100%;
+        padding: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+                padding: 1%;
+        left: 0;
+    }
+    .layout h1 img
+    {
+        height: 30px;
+        width: 70%;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left:0%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: grid;
+        margin-bottom: 5%;
+    }
+    .decname label
+    {
+        font-size: 10px;
+        margin-bottom: 1%;
+        margin-top: 0%;
+    }
+
+    .decname input {
+
+        width: 80%;
+        margin-left: 20%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 10px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .decdates label
+    {
+        font-size: 10px;
+         width: 100%;
+    }
+    .decdates input
+    {
+        width: 100%;
+         text-align: center;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+
+    .decinterment
+    {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    
+    .decinterment label
+    {
+        text-align: left;
+        font-size: 10px;
+         width: 100%;
+    }
+    .decinterment input
+    {
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .decinterment select
+    {
+         text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+
+    .remains {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .remains p {
+        margin-bottom: 10px;
+    }
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    
+    .notes
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+    .vault-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions
+    {
+        width: 100%;
+    }
+    .intermentstype
+    {
+        display: grid;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts
+    {
+        width: 100%;
+        /* border: solid 1px black; */
+    }
+    .courts4options
+    {
+        width: 100%;
+    }
+    .courts label
+    {
+        font-size: 10px;
+        
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 100%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 3 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .prices input
+    {
+        width: 40%;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 11px;
+        height: 11px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 10px;
+    }
+    .remains,.vaulttype,.requirements,.serviceorder,
+    .notings,.intermentstype,.service,.others,.prices,
+    .enter
+    {
+        width: 100%;
+    }
+    .locationsite{
+        display: grid;
+    }
+    .locationsite select {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .locationsite button {
+
+        margin-left: 0%;
+        font-size: 10px;
+        margin-bottom: 2%;
+
+    }
+}
+@media (max-width: 300px) {
+
+
+
+
+
+    .remains-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .layout
+    {
+        width: 100%;
+        padding: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+                padding: 1%;
+        left: 0;
+    }
+    .layout h1 img
+    {
+        height: 30px;
+        width: 70%;
+    }
+
+    .priority
+    {
+      width: 100%;
+      left:0%;
+    }
+    
+    .names
+    {
+        margin-bottom: 2%;
+        border: 2px solid #328636;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .decname
+    {
+        gap: 2%; 
+        display: grid;
+        margin-bottom: 5%;
+    }
+    .decname label
+    {
+        font-size: 10px;
+        margin-bottom: 1%;
+        margin-top: 0%;
+    }
+
+    .decname input {
+
+        width: 80%;
+        margin-left: 20%;
+        height: 25px;
+        padding-left: 1%;
+        font-size: 10px;
+    }
+
+
+    .decdates
+    {
+        width: 100%;
+        display: grid;
+        margin-bottom: 5%;
+        gap: 0;
+    }
+
+    .decdates label
+    {
+        font-size: 10px;
+    }
+    .decdates input
+    {
+        width: 100%;
+        margin-left: 80%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+
+    .decinterment
+    {
+        width: 100%;
+        display: grid;
+    }
+    .decinterment input
+    {
+        width: 100%;
+        margin-left: 80%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .decinterment select
+    {
+        width: 100%;
+        margin-left: 80%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+
+    .remains {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .remains p {
+        margin-bottom: 10px;
+    }
+
+    .remains label,
+    .remains p
+    {
+        margin-right: 2%;
+        font-size: 10px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    
+    .notes
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .notes label
+    {
+        font-size: 10px;
+    }
+    .notes p {
+        font-size: 10px;
+    }
+
+    .unterdatikings
+    {
+        width: 100%;
+        padding: 2%;
+    }
+    .unterdatikings label
+    {
+        font-size: 10px;
+    }
+    .unterdatikings p {
+        font-size: 10px;
+    }
+    .vault-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        /* border: solid 1px black; */
+    }
+    .vaulttype p
+    {
+        font-size: 10px;
+    }
+    .vaulttype label
+    {
+        font-size: 10px;
+    }
+    .requirements label
+    {
+        font-size: 10px;
+    }
+
+
+
+
+    
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1%;
+    }
+    
+    .custom-table td .custom-table th {
+        padding: 4px;
+        width: 30%;
+    }
+    .custom-table th {
+        text-align: left;
+        width: 40%;
+    }
+    .custom-table input[type="file"] {
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    .custom-table input[type="file"]::file-selector-button {
+        background-color: #4CAF50; /* Green background for button */
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    .notings p
+    {
+        font-size: 10px;
+    }
+    .serviceorder label
+    {
+        font-size: 10px;
+    }
+    .intermentoptions
+    {
+        width: 100%;
+    }
+    .intermentstype
+    {
+        display: grid;
+    }
+    .intermentoptions label
+    {
+        font-size: 10px;
+    }
+    .courts
+    {
+        width: 100%;
+        /* border: solid 1px black; */
+    }
+    .courts4options
+    {
+        width: 100%;
+    }
+    .courts label
+    {
+        font-size: 10px;
+        
+    }
+    .Estates label
+    {
+        font-size: 10px;
+    }
+    .service label
+    {
+        font-size: 10px;
+    }
+    .funeral label
+    {
+        width: 20%;
+    
+    }
+    .funeral input
+    {
+        width: 100%;
+        height: 25px;
+        font-size: 10px;
+    }
+    /*Coffin*/
+    .details input{
+        width: 30%;
+        height: 25px;
+        color: #328636;
+        margin-right: 5%;
+    }
+    .details label{
+        width: 30%;
+        font-size: 10px;
+    
+    }
+    .coffin label{
+        font-size: 10px;
+    }
+    .locationsite label
+    {
+        font-size: 10px;
+    }
+
+    .locationsite select {
+        padding: 4px;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .location
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .svg-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1100px; 
+        margin-left: 0%;
+        height: 350px;
+        overflow: hidden;
+        border: 5px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 15px;  
+    }
+    .legend {
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .legend > * {
+        flex-basis: calc(100% / 3 - 5px);
+        box-sizing: border-box;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+    }
+    .legend-color {
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+    }
+    .epitaph label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .epitaph input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .special label
+    {
+        width: 20%;
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    .special input
+    {
+        width: 100%;
+        font-size: 10px;
+        height: 28px;
+    }
+    .others label
+    {
+        font-size: 10px;
+    }
+    .others input
+    {
+        font-size: 10px;
+        height: 28px;
+    }
+    .prices label
+    {
+        font-size: 10px;
+    }
+    .prices input
+    {
+        width: 40%;
+    }
+    .enter button
+    {
+        font-size: 10px;
+    }
+
+    .serviceorder,.intermentstype,
+    .service,.others,.prices,.enter,.remains,
+    .vaulttype,.requirements
+    {
+        width: 95%;
+    }
+
+
+    .serviceorder input[type="radio"],
+    .payment input[type="radio"],
+    .remains input[type="radio"],
+    .vault-item input[type="radio"],
+    .intermentstype input[type="radio"]
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 11px;
+        height: 11px;
+        margin-right: 1%;
+        border: 2px solid #328636;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .serviceorder input[type="radio"]:checked::before,
+    .payment input[type="radio"]:checked::before,
+    .remains input[type="radio"]:checked::before,
+    .vault-item input[type="radio"]:checked::before,
+    .intermentstype input[type="radio"]:checked::before
+     {
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-right: 1%;
+        background-color: #328636;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    select
+    {
+        font-size: 10px;
+    }
+    .remains,.vaulttype,.requirements,.serviceorder,
+    .notings,.intermentstype,.service,.others,.prices,
+    .enter
+    {
+        width: 100%;
+    }
+    .locationsite{
+        display: grid;
+    }
+    .locationsite select {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .locationsite button {
+
+        margin-left: 0%;
+        font-size: 10px;
+        margin-bottom: 2%;
+
+    }
+    
+    .custom-table input[type="file"]
+    {
+        width: 100%;
+    }
+        .decdates input
+    {
+        width: 100%;
+        margin-left: 80%;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+
+    .decinterment
+    {
+        width: 100%;
+        display: grid;
+    }
+    .decinterment input
+    {
+        min-width: 80%;
+        width: auto;
+        margin-left: auto;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .decinterment select
+    {
+        min-width: 80%;
+        width: auto;
+        margin-left: auto;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+
+        .decdates label
+    {
+        font-size: 10px;
+    }
+    .decdates input
+    {
+        width: auto;
+        margin-left: auto;
+        height: 25px;
+        font-size: 10px;
+        margin-bottom: 2%;
+        /* border: solid 1px black; */
+    }
+}

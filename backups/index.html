@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoomable SVG</title>
+<style>
+  /* Styling for the SVG container */
+  .svg-container {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    overflow: hidden;
+  }
+
+  /* Styling for the SVG */
+  svg {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+  }
+</style>
+</head>
+<body>
+
+<div class="svg-container" id="svgContainer">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+    <!-- Your SVG content goes here -->
+    <circle cx="50" cy="50" r="40" fill="red"/>
+  </svg>
+</div>
+
+<script>
+  // Add zoom functionality using mouse wheel
+  document.getElementById('svgContainer').addEventListener('wheel', function(event) {
+    event.preventDefault(); // Prevent default zooming behavior
+
+    var container = this.querySelector('svg'); // Get the SVG element
+    var zoom = event.deltaY > 0 ? 0.9 : 1.1; // Determine zoom direction
+    var viewBox = container.viewBox.baseVal; // Get the viewBox
+
+    // Calculate new viewBox dimensions
+    var newWidth = viewBox.width * zoom;
+    var newHeight = viewBox.height * zoom;
+    var newX = viewBox.x - (newWidth - viewBox.width) / 2;
+    var newY = viewBox.y - (newHeight - viewBox.height) / 2;
+
+    // Apply new viewBox
+    container.setAttribute('viewBox', `${newX} ${newY} ${newWidth} ${newHeight}`);
+  });
+</script>
+
+</body>
+</html>

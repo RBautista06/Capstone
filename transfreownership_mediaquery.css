@@ -1,0 +1,1130 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+}
+@media (max-width: 1680px)
+{
+    label
+    {
+        font-size: 16px;
+    }
+    input
+    {
+        font-size: 16px;
+    }
+    .transferfillup input[type="text"]
+    {
+        font-size: 16px;
+    }
+    p
+    {
+        font-size: 16px;
+    }
+        .notes label,.notes p
+    {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1440px)
+{
+    label
+    {
+        font-size: 14px;
+    }
+    input
+    {
+        font-size: 14px;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button
+    {
+        font-size: 14px;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 14px;
+    }
+    .notes label,.notes p
+    {
+        font-size: 14px;
+    }
+    .svg-container {
+        height: 400px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+    }
+}
+@media (max-width: 1128px)
+{
+    label
+    {
+        font-size: 10px;
+    }
+    input
+    {
+        font-size: 10px;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .extrafield input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 10px;
+    }
+    .notes label,.notes p
+    {
+        font-size: 10px;
+    }
+    .svg-container {
+        height: 350px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+    }
+}
+@media (max-width: 1000px)
+{
+    label
+    {
+        font-size: 10px;;
+    }
+    .transferorfiles p
+{
+    font-size: 10px;
+}
+    input
+    {
+        font-size: 10px;;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .extrafield input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 10px;;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 10px;;
+    }
+    .notes label,.notes p
+    {
+        font-size: 10px;;
+    }
+    .svg-container {
+        height: 400px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+    }
+    /*changes in layout*/
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .detailsbox
+    {
+        top: 0%;
+        padding: 0%;
+        left: 0%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    .Fillupform,.DeedofTransfer
+    {
+        box-shadow: none;
+        padding: 2%;
+        border: 2px solid #328636;
+    }
+    .transferfillup
+    {
+        border: none;
+    }
+}
+@media (max-width: 800px)
+{
+    label
+    {
+        font-size: 12px;;
+    }
+    input
+    {
+        font-size: 12px;;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .extrafield input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 12px;;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 12px;;
+    }
+    .notes label,.notes p
+    {
+        font-size: 12px;;
+    }
+    .svg-container {
+        height: 400px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+    }
+    /*changes in layout*/
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .detailsbox
+    {
+        top: 0%;
+        padding: 0%;
+        left: 0%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    .Fillupform,.DeedofTransfer
+    {
+        box-shadow: none;
+        padding: 2%;
+        border: 2px solid #328636;
+    }
+    .transferfillup
+    {
+        border: none;
+    }
+}
+@media (max-width: 600px)
+{
+    label
+    {
+        font-size: 10px;
+    }
+    .transferorfiles .file-container .transferor-file-input,
+    .transferorfiles .transferee-file-container .transferee-file-input
+    {
+        margin-left: 0%;
+        width: 100%;
+        border-bottom: solid 2px #dedede;
+    }
+    .transferee-file-input input[type="file"]
+{
+    color: #16423C;
+    /* background-color: #dedede; */
+    padding: 1%;
+    border-radius: 5px;
+}
+    .transferorfiles p
+    {
+        font-size: 10px;
+    }
+    input
+    {
+        font-size: 10px;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .extrafield input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 10px;;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 10px;;
+    }
+    .notes label,.notes p
+    {
+        font-size: 10px;;
+    }
+    .svg-container {
+        height: 400px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+          border-radius: 5px;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /*changes in layout*/
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .detailsbox
+    {
+        top: 0%;
+        padding: 0%;
+        left: 0%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    .Fillupform,.DeedofTransfer
+    {
+        box-shadow: none;
+        padding: 2%;
+        border: 2px solid #328636;
+        margin-bottom: 5%;
+    }
+    .transferfillup
+    {
+        border: none;
+    }
+}
+@media (max-width: 500px)
+{
+    .pay3d
+    {
+        display: none;
+    }
+    .prices
+    {
+        width: 100%;
+    }
+    label
+    {
+        font-size: 10px;
+    }
+    input
+    {
+        font-size: 10px;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .locationsite
+    {
+        display: flex;
+        gap: 2vh;
+        /* border: solid 1px black; */
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    #location
+    {
+        margin-top: 0%;
+        width: 100%;
+    }
+    .btnLogin-popup1
+    {
+        margin-top: 2%;
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin-left: 0%;
+        left: 0;
+    }
+    .locationsite button
+    {
+        margin-top: 0%;
+        width: 50%;
+        left: 0;
+             /* border: solid 1px black; */
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .extrafield input,
+    .extra-fields-transferee input
+    {
+        width: 100%;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 10px;;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 10px;;
+    }
+    .notes label,.notes p
+    {
+        font-size: 10px;;
+    }
+    .svg-container {
+        height: 300px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+          border-radius: 5px;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /*changes in layout*/
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .detailsbox
+    {
+        top: 0%;
+        padding: 0%;
+        left: 0%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    .Fillupform,.DeedofTransfer
+    {
+        box-shadow: none;
+        padding: 2%;
+        border: 2px solid #328636;
+        margin-bottom: 5%;
+    }
+    .transferfillup
+    {
+        border: none;
+    }
+    .internmentform h1 img
+    {
+        width:40%;
+    }
+    .Fillupform h1 img,
+    .transfer h1 img
+    {
+        width: 50%;
+    }
+    .personappeared
+    {
+        display: none;
+        width: auto;
+    }
+    .extrafield {
+    display: flex;
+    grid-template-columns: auto;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between the inputs */
+}
+}
+@media (max-width: 400px)
+{
+    label
+    {
+        font-size: 9px;
+    }
+        .transferorfiles .file-container .transferor-file-input,
+    .transferorfiles .transferee-file-container .transferee-file-input
+    {
+        margin-left: 0%;
+        width: 100%;
+        border-bottom: solid 2px #dedede;
+    }
+    .transferee-file-input input[type="file"]
+{
+    color: #16423C;
+    /* background-color: #dedede; */
+    padding: 1%;
+    border-radius: 5px;
+}
+    .transferorfiles p
+    {
+        font-size: 9px;
+    }
+    input
+    {
+        font-size: 9px;
+    }
+    input[type="radio"],
+    .payment input[type="radio"]
+    {
+        height: 12px;
+        width: 12px;
+    }
+    .transferor-container,
+    .nameoftransferee
+    {
+        display: flex;
+    }
+    .transferor-container label,
+    .nameoftransferee label
+    {
+        height: auto;
+        width: 100%;
+        /* border: solid 1px black; */
+        margin: 0;
+    }
+    #location
+    {
+        width: 100%;
+    }
+    .btnLogin-popup1
+    {
+        margin-top: 2%;
+        height: auto;
+        width: 50%;
+        /* border: solid 1px black; */
+        left: 0;
+    }
+    #location
+    {
+        margin-top: 0%;
+        width: 100%;
+    }
+    .locationsite button
+    {
+        width: 50%;
+        left: 0;
+    }
+    .decinterment {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into the next row */
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .decinterment > * {
+        flex: 1 1 45%; /* Each item takes up to 45% of the width and can grow/shrink */
+    }
+    .addressoftransferee
+    {
+        margin-top: 1%;
+    }
+    .transferor-container input,
+    .nameoftransferee input
+    {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .extrafield input,
+    .extra-fields-transferee input
+    {
+        width: 100%;
+    }
+    .transferfillup input[type="text"],
+    .decinterment input[type="date"],
+    .decinterment input[type="text"],
+    .decinterment input,
+    .decinterment select,
+    .payment input,
+    .payment label
+    .pricestab input,
+    .pricestab label,
+    .requirements label,
+    .requirements p,
+    .DeedofTransfer p,
+    .DeedofTransfer span,
+    .DeedofTransfer input[type="text"],
+    .enter button,
+    .btnLogin-popup1,
+    select,
+    .deedofrightext #status-text,
+    .deedofrightext #formattedPrice,
+    #selectedLotDescription1,
+    #selectedLotDescription2,
+    .personappeared th
+    {
+        font-size: 9px;;
+    }
+    .btnLogin-popup1
+    {
+        padding: 1%;
+    }
+  .pricestab input
+    {
+        height: auto;
+    }
+        p
+    {
+        font-size: 9px;;
+    }
+    .notes label,.notes p
+    {
+        font-size: 9px;;
+    }
+    .svg-container {
+        height: 250px;
+        border: 3px solid #59cc89;
+        background-color: #22223b;
+        border-radius: 10px;
+    }
+    .deedofrightext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+          border-radius: 5px;
+    }
+    .jointaffidavitttext
+    {
+        width: 100%;
+        left: 0%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    .enter
+    {
+        width: 100%;
+        left: 0;
+    }
+    .enter button
+    {
+        border: solid 5px var(--white);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /*changes in layout*/
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .detailsbox
+    {
+        top: 0%;
+        padding: 0%;
+        left: 0%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    .Fillupform,.DeedofTransfer
+    {
+        box-shadow: none;
+        padding: 2%;
+        border: 2px solid #328636;
+        margin-bottom: 5%;
+    }
+    .transferfillup
+    {
+        border: none;
+    }
+    .internmentform h1 img
+    {
+        width:40%;
+    }
+    .Fillupform h1 img,
+    .transfer h1 img
+    {
+        width: 50%;
+    }
+    .personappeared
+    {
+        display: none;
+        width: auto;
+    }
+    .extrafield {
+    display: flex;
+    grid-template-columns: auto;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between the inputs */
+}
+}

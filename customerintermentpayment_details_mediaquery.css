@@ -1,0 +1,788 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+@media (max-width: 1680px)
+{
+
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+}
+@media (max-width: 1440px)
+{
+
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: 3px solid rgb(58, 141, 38);
+            font-size: 14px;
+        }
+
+}
+@media (max-width: 1280px)
+{
+        input
+        {
+            font-size: 12px;
+        }
+        .proofpayment button
+        {
+            font-size: 14px;
+            padding: 5px;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+            border: 2px solid #4fd16b;
+            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+        }
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: 3px solid rgb(58, 141, 38);
+             font-size: 12px;
+        }
+
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 5px;
+  
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 20px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 12px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+
+
+}
+@media (max-width: 1128px)
+{
+        input
+        {
+            font-size: 10px;
+        }
+        .proofpayment button
+        {
+            font-size: 12px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 2px solid rgb(58, 141, 38);
+            font-size: 10px;
+            margin-bottom: 5%;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 50%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 25px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 15px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 10px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+        }
+
+
+}
+@media (max-width: 1000px)
+{
+        input
+        {
+            font-size: 12px;
+        }
+        .proofpayment button
+        {
+            font-size: 12px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 10%;
+            padding-right: 10%;
+            width: 100%;
+            left: 0;
+        }
+       .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 5px solid rgb(58, 141, 38);
+            font-size: 12px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 50%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 30px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 15px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 12px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .payments
+        {
+            padding: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .proofpayment
+        {
+            padding: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+        }
+
+
+}
+@media (max-width: 800px)
+{
+        input
+        {
+            font-size: 12px;
+        }
+        .proofpayment button
+        {
+            font-size: 12px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+            left: 0;
+        }
+       .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 5px solid rgb(58, 141, 38);
+            font-size: 12px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 50%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 30px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 15px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 12px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .payments
+        {
+            padding: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+                .proofpayment
+        {
+            padding: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+        }
+
+}
+@media (max-width: 600px)
+{
+        input
+        {
+            font-size: 10px;
+        }
+        .proofpayment button
+        {
+            font-size: 10px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 3%;
+            padding-right: 3%;
+            width: 100%;
+            left: 0;
+        }
+       .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 3px solid rgb(58, 141, 38);
+            font-size: 10px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 50%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 28px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 13px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 10px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .payments
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+                .proofpayment
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+            width: 100%;
+        }
+
+}
+
+@media (max-width: 400px)
+{
+        input
+        {
+            font-size: 9px;
+        }
+        .proofpayment button
+        {
+            font-size: 9px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: 100%;
+            left: 0;
+        }
+       .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 2px solid rgb(58, 141, 38);
+            font-size: 9px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 50%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 26px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 1%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 12px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 9px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .payments
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+                .proofpayment
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+            width: 100%;
+        }
+
+}
+@media (max-width: 300px)
+{
+        input
+        {
+            font-size: 8px;
+        }
+        .proofpayment button
+        {
+            font-size: 8px;
+            padding: 5px;
+            width: 50%;
+            left: 50%;
+        }
+          .btnLogin-popup::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(100%);
+            min-height: calc(100%);
+        }
+        .internmentform {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: 100%;
+            left: 0;
+        }
+        .internmentform h1 img{
+            width: 70%;
+        }
+        .payments img{
+            width: 100%;
+        }
+       .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .detailstable {
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 2px solid rgb(58, 141, 38);
+            font-size: 8px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        .proofpayment,.payments
+        {
+            width: 100%;
+            margin-left: 0%;
+            border: none;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .proofpayment img,.payments img
+        {
+            width: 70%;
+            position: relative;
+            left: -8%;
+        }
+          .passbuttons button {
+            background-color: transparent; 
+            border: none;
+            padding: 10px; 
+        }
+        
+        .passbuttons button ion-icon {
+            font-size: 24px; 
+            color: #367952;
+        }
+        .payments button {
+            background-color: #328636; 
+            border: none;
+            color: white; 
+            padding: 2%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .payments button ion-icon {
+            vertical-align: middle; 
+            font-size: 12px;
+        }
+        .payments a { 
+            padding: 5px;
+            font-size: 8px;
+            transition: 1s; 
+        }
+
+        .payments a:hover {
+            background-color: #45a049; 
+            transform: scale(1.2);
+        }
+        .details {
+            display: grid;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .payments
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+                .proofpayment
+        {
+            padding: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+            width: 100%;
+        }
+        .proofpayment button {
+        
+            padding: 4px;
+            padding-left: 0%;
+            padding-right: 0%;
+            min-width: none;
+            min-height: none;
+        }
+
+}

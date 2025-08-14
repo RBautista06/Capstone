@@ -1,0 +1,873 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+@media (max-width: 1680px)
+{
+    body
+    {
+        font-size: 16px;
+    }
+
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 1440px)
+{
+    body
+    {
+        font-size: 13px;
+    }
+
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 30px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 13px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 15px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 13px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1128px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 12px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 12px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+
+}
+@media (max-width: 1000px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 12px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 12px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+        .svg-container {
+    width: 50%; 
+    max-width: 600px; 
+    height: 300px;
+    overflow: hidden;
+    border: 5px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 5%;  
+}
+
+}
+@media (max-width: 800px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+    .detailstable
+    {
+        border: 3px solid rgb(58, 141, 38);
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+        border: 3px solid rgb(58, 141, 38);
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: auto;
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 12px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 12px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+    .modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+
+    }
+
+
+}
+
+
+@media (max-width: 800px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+    .detailstable
+    {
+        width: 100%;
+        left: 0;
+        border: 2px solid rgb(58, 141, 38);
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+        border: 2px solid rgb(58, 141, 38);
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: auto;
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 12px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 10px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 12px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+    .modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+
+    }
+
+
+}
+@media (max-width: 400px)
+{
+    body
+    {
+        font-size: 8px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+    .internmentform h1 img
+{
+    width:50%;
+
+}
+    .detailstable
+    {
+        width: 100%;
+        left: 0;
+        border: 2px solid rgb(58, 141, 38);
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+        border: 2px solid rgb(58, 141, 38);
+        border-radius: 5px;
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 9px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: auto;
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 12px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 8px;
+    font-size: 9px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 12px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+    .modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+
+    }
+    .svg-container {
+    width: 50%; 
+    max-width: 600px; 
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 5%;  
+}
+.funeraldetails th
+{
+    font-weight: bold;
+    width: 20%;
+}
+.funeraldetails img,.location img,.solodiv img,.decname img
+{
+    width: 50%;
+    position: relative;
+    left: -5%;
+}
+
+.payments table
+{
+    width: 70%;
+    margin-top: 0;
+    /* border: solid 1px black; */
+}
+.payments th
+{
+    font-weight: bold;
+    width: 30%;
+
+}
+
+
+}
+@media (max-width: 350px)
+{
+    body
+    {
+        font-size: 8px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+        box-shadow: none;
+
+    }
+    .internmentform h1 img
+{
+    width:70%;
+
+}
+    .decname table
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .decname th,.decname td
+    {
+        display: block;
+        width: 100%;
+    }
+    .decname th[colspan="6"]
+    {
+        grid-column: span 4;
+    }
+    .detailstable
+    {
+        width: 100%;
+        left: 0;
+        border: 2px solid rgb(58, 141, 38);
+        padding: 1%;
+                box-shadow: none;
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+        border: 2px solid rgb(58, 141, 38);
+        border-radius: 5px;
+    }
+    
+    .passbuttons button ion-icon {
+        font-size: 25px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 4px;
+    font-size: 8px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: auto;
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 4px;
+    font-size: 8px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 10px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+    .modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+
+    }
+    .svg-container {
+    width: 50%; 
+    max-width: 600px; 
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 5%;  
+}
+.funeraldetails th
+{
+    font-weight: bold;
+    width: 20%;
+}
+.funeraldetails img,.location img,.solodiv img,.decname img
+{
+    width: 50%;
+    position: relative;
+    left: -5%;
+}
+
+.payments table
+{
+    width: 70%;
+    margin-top: 0;
+    /* border: solid 1px black; */
+}
+.payments th
+{
+    font-weight: bold;
+    width: 30%;
+
+}
+
+
+}
+@media (max-width: 250px)
+{
+    body
+    {
+        font-size: 8px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+        box-shadow: none;
+
+    }
+    .internmentform h1 img
+{
+    width:80%;
+
+}
+    .detailstable
+    {
+        width: 100%;
+        left: 0;
+        border: 2px solid rgb(58, 141, 38);
+        padding: 1%;
+                box-shadow: none;
+    }
+    .location,.payments,.funeraldetails,.solodiv,.decname
+    {
+        width: 100%;
+        margin-left: 0;
+        border: 2px solid rgb(58, 141, 38);
+        border-radius: 5px;
+    }
+
+
+    .passbuttons button ion-icon {
+        font-size: 20px; 
+        color: #367952;
+    }
+    .btnLogin-popup {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 4px;
+    font-size: 8px;
+    }
+  
+  .btnLogin-popup::before {
+    min-width: calc(103%);
+    min-height: auto;
+    }
+    .btnLogin-popup ion-icon
+    {
+        font-size: 10px;
+    }
+    .btnLogin-popup1 {
+    margin-right: 5px;
+    min-width: none;
+    min-height: none;
+    border: 3px solid rgb(199, 241, 171);
+    padding: 4px;
+    font-size: 8px;
+    }
+  
+  .btnLogin-popup1::before {
+    min-width: calc(103%);
+    min-height: calc(100%);
+    }
+    .btnLogin-popup1 ion-icon
+    {
+        font-size: 10px;
+    }
+    .intermentlogo
+    {
+        display: none;
+    }
+    .firstdiv-picture1
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        /* border: solid 1px black; */
+    }
+    .firstdiv-picture1 img
+    {
+        width: 60%;
+        display: flex;
+        filter: brightness(1.1);
+        /* border: solid 1px black; */
+    }
+    .modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+
+    }
+
+.funeraldetails th
+{
+    font-weight: bold;
+    width: 20%;
+}
+.funeraldetails img,.location img,.solodiv img,.decname img
+{
+    width: 50%;
+    position: relative;
+    left: -5%;
+}
+
+.payments table
+{
+    width: 70%;
+    margin-top: 0;
+    /* border: solid 1px black; */
+}
+.payments th
+{
+    font-weight: bold;
+    width: 30%;
+
+}
+.lotsandmap
+{
+    display: grid;
+    width: 100%;
+}
+.svg-container {
+    width: 149%; 
+    left: 0;
+    margin-left: 0;
+    max-width: none; 
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 5%;  
+}
+
+
+}

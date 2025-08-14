@@ -1,0 +1,1046 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+
+@media (max-width: 1760px)
+{
+
+    .logo img {
+        width: 57px;
+        height: 57px;
+    }
+    .logo h2 {
+        font-size: 16px;
+    }
+    .sidebar .links {
+        font-size: 16px;
+        margin-top: 0%;
+    }
+
+
+}
+
+@media (max-width: 1600px)
+{
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+    .logo h2 {
+        font-size: 15px;
+    }
+    .sidebar .links {
+        font-size: 15px;
+        margin-top: 0%;
+    }
+
+}
+@media (max-width: 1366px)
+{
+    .logo
+    {
+        width: 80%;
+
+    }
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo h2 {
+        font-size: 14px;
+    }
+    .sidebar
+    {
+        padding-left: 0;
+    }
+    .wrapper
+    {
+        width: 80%;
+        margin-top: 5%;
+    }
+    .sidebar .links {
+        font-size: 14px;
+        margin-top: 0%;
+        padding: 0;
+        width: 100%;
+
+    }
+    .sidebar .logo {
+        color: #eeeef2;
+        display: flex;
+        align-items: center;
+        padding: 25px 10px 15px;
+        margin-bottom: 1%;
+    }
+    
+    .links h4
+    {
+        margin-bottom: 1%;
+    }
+    .links li a {
+        padding: 0%;
+        text-align: left;
+    }
+    .links li {
+        padding: 0%;
+        /* border: solid 1px black; */
+        width: 100%;
+    }
+    .links li span {
+        margin-right: 1%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        /* border: solid 1px black; */
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+    }
+
+}
+@media (max-width: 1280px)
+{
+    .logo
+    {
+        width: 80%;
+
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .logo h2 {
+        font-size: 12px;
+    }
+    .sidebar
+    {
+        padding-left: 0;
+    }
+    .wrapper
+    {
+        width: 80%;
+        margin-top: 2%;
+    }
+    .sidebar .links {
+        font-size: 12px;
+        margin-top: 0%;
+        padding: 0;
+        width: 100%;
+
+    }
+    .sidebar .logo {
+        color: #eeeef2;
+        display: flex;
+        align-items: center;
+        padding: 25px 10px 15px;
+        margin-bottom: 1%;
+    }
+    
+    .links h4
+    {
+        margin-bottom: 1%;
+    }
+    .links li a {
+        padding: 0%;
+        text-align: left;
+    }
+    .links li {
+        padding: 0%;
+        /* border: solid 1px black; */
+        width: 100%;
+    }
+    .links li span {
+        margin-right: 1%;
+        padding-top: 4%;
+        font-size: 13px;
+        padding-bottom: 4%;
+        /* border: solid 1px black; */
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+    }
+    
+}
+@media (max-width: 1128px)
+{
+    .logo
+    {
+        width: 80%;
+
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .logo h2 {
+        font-size: 10px;
+    }
+    .sidebar
+    {
+        padding-left: 0;
+    }
+    .wrapper
+    {
+        width: 80%;
+        margin-top: 2%;
+    }
+    .sidebar .links {
+        font-size: 10px;
+        margin-top: 0%;
+        padding: 0;
+        width: 100%;
+
+    }
+    .sidebar .logo {
+        color: #eeeef2;
+        display: flex;
+        align-items: center;
+        padding: 20px 5px 10px;
+        margin-bottom: 0%;
+    }
+    
+    .links h4
+    {
+        margin-bottom: 0%;
+    }
+    .links li a {
+        padding: 0%;
+        text-align: left;
+    }
+    .links li {
+        padding: 0%;
+        /* border: solid 1px black; */
+        width: 100%;
+    }
+    .links li span {
+        margin-right: 1%;
+        padding-top: 4%;
+        font-size: 11px;
+        padding-bottom: 4%;
+        /* border: solid 1px black; */
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+    }
+
+}
+@media (max-width: 1000px)
+{
+
+    .sidebar
+    {
+        padding-left: 0;
+        display: none;
+    }
+    .rightbackground
+    {
+        display: none;
+    }
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 1%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        /* display: none; */
+        font-size: 25px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 35%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 5px var(--lightblack);
+        border-left: solid 5px var(--lightblack);
+        border-bottom: solid 5px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 20px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 35px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 15px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 800px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 1%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 22px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 40%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 5px var(--lightblack);
+        border-left: solid 5px var(--lightblack);
+        border-bottom: solid 5px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 15px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 35px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 15px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 600px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 1%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 22px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 45%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 15px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 35px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 15px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 500px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 2%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 50%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 14px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 400px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 2%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 60%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 14px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 375px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 2%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 70%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 14px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}
+@media (max-width: 340px)
+{
+
+    .toggle-btn
+    {
+        position: fixed;
+        display: flex;
+        right: -4%;
+        padding: 2%;
+        padding-right: 8%;
+        top: 4%;
+        z-index: 5;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(to right, #367952, #1f412d);
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        
+    }
+    .toggle-btn ion-icon
+    {
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .dropdown-menu
+    {
+        display: block;
+        top: 0%;
+        width: 80%;
+        padding-top:1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-top: solid 3px var(--lightblack);
+        border-left: solid 3px var(--lightblack);
+        border-bottom: solid 3px var(--lightblack);
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #367952, #1f412d);
+    }
+    .dropdown-menu li a
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+    .dropdown-menu h4
+    {
+        padding: 1%;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--white);
+        margin-bottom: 1%;
+        margin-top: 5%;
+        margin-right: 10%;
+
+    }
+    .dropdown-menu span
+    {
+        font-size: 14px;
+        margin-left: 5%;
+        text-decoration: none;
+        color: var(--yellow);
+
+    }
+    .dropdown-menu .btnLogin-popup
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .close-btn {
+        background: none;
+        border: none;
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--white);
+    }
+    
+
+    .logosidebar {
+        color: #eeeef2;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .logosidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #FFD95A; /* Adjust the color and width as needed */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+    
+    .logosidebar h2 {
+        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease; /* Add a transition for smoother text effect */
+        color: var(--white);
+    }
+
+    
+}

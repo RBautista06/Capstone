@@ -1,0 +1,849 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+}
+
+@media (max-width:1680px)
+{
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+}
+@media (max-width:1440px)
+{
+    body,input
+    {
+        font-size: 14px;
+    }
+    .picture
+    {
+        margin-bottom: 3%;
+    }
+    .picture img {
+        width: 170px;
+        height: 170px;
+    }
+    .updateform
+    {
+        margin-top: 1%;
+    }
+        .updateform h1
+    {
+        
+        font-size: 25px;
+    }
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+}
+@media (max-width:1280px)
+{
+    body,input
+    {
+        font-size: 12px;
+    }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 3%;
+
+        height: 70%;
+    }
+    .picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .listaccs3d1 {
+    position: absolute;
+    top: -5%;
+    left: -13%;
+    width: 40%;
+    height: 20%;
+    align-items: center;
+    transform: scaleX(-1); /* Flip the element horizontally */
+  }
+  .detailstable
+  {
+    padding-top: 0%;
+    min-height: 90vh;
+  }
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+  .detailstable h1{
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    /* border: solid 1px black; */
+    color: var(--white);
+    background-color: var(--darkgreen);
+    border-radius: 8px;
+  }
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+}
+@media (max-width:1128px)
+{
+    body,input
+    {
+        font-size: 10px;
+    }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 3%;
+
+        height: 70%;
+    }
+    .picture img {
+        width: 120px;
+        height: 120px;
+    }
+        .updateform h1
+    {
+        font-size: 16px;
+    }
+    .listaccs3d1 {
+    position: absolute;
+    top: -5%;
+    left: -13%;
+    width: 40%;
+    height: 20%;
+    align-items: center;
+    transform: scaleX(-1); /* Flip the element horizontally */
+  }
+  .detailstable
+  {
+    padding-top: 0%;
+  }
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+}
+@media (max-width:1000px)
+{
+    body,input
+    {
+        font-size: 12px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 3%;
+
+        height: 70%;
+    }
+    .picture img {
+        width: 170px;
+        height: 170px;
+    }
+        .updateform h1
+    {
+        font-size: 20px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  {
+    padding-top: 0%;
+        border: 3px solid #328636;
+        border-radius: 10px;
+        box-shadow:  none; 
+  }
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+}
+@media (max-width:800px)
+{
+    body,input
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 3%;
+
+        height: 70%;
+    }
+    .picture img {
+        width: 140px;
+        height: 140px;
+        border: var(--white) 3px solid;
+    }
+        .updateform h1
+    {
+        font-size: 16px;
+        margin-bottom: 5%;
+        background-color: var(--khaki);
+        color: var(--darkgreen);
+        border-radius: 5px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  { 
+        padding-top: 0%;
+        width: 100%;
+        left: 0;
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow:  none; 
+        background-color: transparent;
+         background: linear-gradient(to top, #428144, #1b461d);
+  }
+  
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+    .updateform label {
+    color: var(--khaki);
+}
+    .updateform input {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: var(--khaki);
+    color: var(--darkgreen);
+}
+
+}
+@media (max-width:600px)
+{
+    body,input
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 3%;
+
+        height: 70%;
+    }
+    .picture img {
+        width: 140px;
+        height: 140px;
+        border: var(--white) 3px solid;
+    }
+        .updateform h1
+    {
+        font-size: 16px;
+        margin-bottom: 5%;
+        background-color: var(--khaki);
+        color: var(--darkgreen);
+        border-radius: 5px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  { 
+        padding-top: 0%;
+        width: 100%;
+        left: 0;
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow:  none; 
+        background-color: transparent;
+         background: linear-gradient(to top, #428144, #1b461d);
+  }
+  
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+    .updateform label {
+    color: var(--khaki);
+}
+    .updateform input {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: var(--khaki);
+    color: var(--darkgreen);
+}
+
+}
+@media (max-width:400px)
+{
+    body,input
+    {
+        font-size: 10px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 8%;
+
+        height: 70%;
+    }
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+    .picture img {
+        width: 120px;
+        height: 120px;
+        border: var(--white) 3px solid;
+    }
+        .updateform h1
+    {
+        font-size: 16px;
+        margin-bottom: 5%;
+        background-color: var(--khaki);
+        color: var(--darkgreen);
+        border-radius: 5px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  { 
+        padding-top: 0%;
+        width: 100%;
+        left: 0;
+        min-height: 0;
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow:  none; 
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+         background: linear-gradient(to top, #428144, #1b461d);
+  }
+  .internmentform h1 img
+{
+    width:60%;
+    
+}
+  
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    padding: 20px;
+    /* border: solid 1px black; */
+}
+    .updateform label {
+    color: var(--khaki);
+}
+    .updateform input {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: var(--khaki);
+    color: var(--darkgreen);
+}
+
+}
+@media (max-width:300px)
+{
+    body,input
+    {
+        font-size: 8px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+        
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 8%;
+
+        height: 70%;
+    }
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+    .picture img {
+        width: 120px;
+        height: 120px;
+        border: var(--white) 3px solid;
+    }
+        .updateform h1
+    {
+        font-size: 14px;
+        margin-bottom: 5%;
+        background-color: var(--khaki);
+        color: var(--darkgreen);
+        border-radius: 5px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  { 
+        padding-top: 0%;
+        width: 100%;
+        left: 0;
+        min-height: 0;
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow:  none; 
+        background-color: transparent;
+         background: linear-gradient(to top, #428144, #1b461d);
+  }
+  .internmentform h1 img
+{
+    width:70%;
+    
+}
+  
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    padding: 10px;
+    /* border: solid 1px black; */
+}
+    .updateform label {
+    color: var(--khaki);
+}
+    .updateform input {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 10px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: var(--khaki);
+    color: var(--darkgreen);
+}
+
+}
+@media (max-width:250px)
+{
+    body,input
+    {
+        font-size: 8px;
+    }
+    .internmentform
+    {
+        width: 100%;
+        left: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+        
+    }
+            .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+    .picture
+    {
+        margin-bottom: 3%;
+        margin-top: 5%;
+        height: 70%;
+    }
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+    .picture img {
+        width: 100px;
+        height: 100px;
+        border: var(--white) 3px solid;
+    }
+        .updateform h1
+    {
+        font-size: 12px;
+        margin-bottom: 5%;
+        background-color: var(--khaki);
+        color: var(--darkgreen);
+        border-radius: 5px;
+    }
+    .listaccs3d1 {
+        display: none;
+
+  }
+  .detailstable
+  { 
+        padding-top: 0%;
+        width: 100%;
+        left: 0;
+        min-height: 0;
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow:  none; 
+        background-color: transparent;
+         background: linear-gradient(to top, #428144, #1b461d);
+  }
+  .internmentform h1 img
+{
+    width:70%;
+    
+}
+  
+    input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+    
+    .updateform {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    padding: 10px;
+
+    /* border: solid 1px black; */
+}
+    .updateform label {
+    color: var(--khaki);
+}
+    .updateform input {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+    .form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+    input[type="submit"] {
+    width: 100%;
+    left: 0%;
+    font-size: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--khaki);
+    color: var(--darkgreen);
+}
+
+}

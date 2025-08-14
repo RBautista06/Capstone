@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+model-viewer::part(rotate-button) {
+    display: none;
+}
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+}
+body {
+    min-height: 100vh;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('pictures/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center; */
+    margin: 0;
+    background-color: var(--white);
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('pictures/backgrondoverlay.png');
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    opacity: 0.4; /* Adjust this value for desired opacity */
+    z-index: -1; /* Ensure it sits behind other content */
+}
+header {
+    position: relative;
+    width: 100%;
+    padding: 0.5%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .links
+{
+    display: flex;
+    margin-top: 1%;
+}
+li
+{
+    list-style-type: none;
+}
+.navbar a
+{
+    color: var(--green);
+    margin-left: 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right,  var(--lightgreen), var(--green), var(--green), var(--green), var(--lightgreen));
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+ .btnLogin-popup
+{
+    position: relative;
+    width: 15vh;
+    height: 4.5vh;
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fefee3;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: -10px;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to right,  var(--lightgreen), var(--green), var(--green), var(--green), var(--lightgreen));
+    background-origin: border-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    animation: moveGoldGradient 2s linear infinite alternate;
+}
+@keyframes moveGoldGradient {
+    0% {
+        border-radius: 10px;
+        border-image-source: linear-gradient(to right,  var(--lightgreen), var(--green), var(--green), var(--green), var(--lightgreen));
+        border-image-slice: 1;
+        border-image-width: 2px;
+        border-image-outset: 0;
+        border-color: transparent;
+        background-position: 0 0;
+    }
+    100% {
+        border-radius: 10px;
+        border-image-source: linear-gradient(to right,  var(--lightgreen), var(--green), var(--green), var(--green), var(--lightgreen));
+        border-image-slice: 1;
+        border-image-width: 2px;
+        border-image-outset: 0;
+        border-color: transparent;
+        background-position: 100% 0;
+    }
+}
+.btnLogin-popup:hover
+{
+    background: #b7e0b4;
+    color: #162938;
+}
+.toggle-btn{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    width: 50%;
+    height: 60px;
+    background: url("pictures/providencelogowithtext.png") no-repeat;
+    background-size: contain;
+}
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.logo:not(:hover) {
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+.dropdown-menu
+{
+    position: fixed;
+    display: none;
+    width: 60%;
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: -100%;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    height: 100vh;
+    transition: right 0.3s ease;
+}
+.dropdown-menu.show {
+    right: 0;
+}
+.close-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.dropdown-menu li
+{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.dropdown-menu li a
+{
+    font-size: 1.2rem;
+}
+.wrapper
+{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 10%;
+    left: 74%;
+    background: #eeeef2;
+    border: 2px solid #174e19;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5s ease, height 0.2s ease;
+    z-index: 999;
+}
+.wrapper.active-popup {
+    transform: scale(1); /* Makes the popup visible */
+}
+.wrapper.active
+{
+    top: 5%;
+    height: 850px;
+    width: 440px;
+}
+.wrapper .form-box
+{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box.login
+{
+    transition: transform .18s ease;
+    transform: translateX(0);
+    /*display: none;*/
+}
+.wrapper.active .form-box.login
+{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register
+{
+    position: absolute;
+    transition: none;
+    transform: translateX(600px);
+}
+.wrapper.active .form-box.register
+{
+    position: absolute;
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper .iconclose
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(46, 46, 46);
+    font-size: 10em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.wrapper p
+{
+    font-size: 1.5rem;
+}
+.wrapper a
+{
+    font-size: 1.5rem;
+}
+.form-box h2
+{
+    font-size: 3rem;
+    color: #174e19;
+    text-align: center;
+    top: 20px;
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #3da542;
+    margin: 20px 0;
+}
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #174e19;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -5px;
+}
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #126e15;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    font-size: 3rem;
+    color: #174e19;
+}
+.remember-forgot
+{
+    font-size: 2rem;
+    color: #174e19;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input
+{
+    accent-color: #174e19;
+    margin-right: 3px;
+}
+.remember-forgot a
+{
+    color: #174e19;
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+.btn
+{
+    width: 100%;
+    height: 45px;
+    background-image: linear-gradient(to right, #328636, #3da542, #7fd175, #3da542, #328636);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.login-register
+{
+    font-size: .9em;
+    color: #174e19;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a
+{
+    color: #174e19;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login-register p a:hover
+{
+    text-decoration: underline;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    font-size: 1.2rem;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.password-hint {
+    visibility: hidden; /* Hidden by default */
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 55px;
+    font-size: 1.2rem;
+    left: 0;
+    z-index: 1;
+    width: 150px;
+}
+/* Style to display the password hint */
+.input-box.show-hint .password-hint {
+    visibility: visible; /* Show when typing */
+}
+.hometext {
+    position: relative;
+    flex-direction: column;
+    /* background-image: linear-gradient(to bottom, #060f06, rgba(0, 0, 0, .5)), url('pictures/providencebetaphoto.jpg'); */
+    background-color: var(--lightblack);
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    margin-top: 1%;
+    left: 10%;
+    width: 80%;
+    top: 10%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+}
+.top-section {
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    left: 10%;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    background-color: var(--white);
+    border-radius: 20px;
+    color: var(--white);
+    animation: pop-up 1s ease forwards; /* Apply the animation */
+}
+.firsttext p
+{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--darkgreen);
+}
+.firsttext
+{
+    width: 70%;
+    color: var(--darkgreen);
+}
+.firsttext h1
+{
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-size: 3rem;
+}
+.text3dlogo
+{
+    display: flex;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--semidarkgreen);
+    background-image: linear-gradient(to bottom, #0f1d0f, rgba(0, 0, 0, 0));
+}
+.providencegem
+{
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+}
+.firstdiv-picture1
+{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('pictures/greenbg.png');
+    background-size: cover; */
+}
+.firstdiv-picture1 img
+{
+    display: none;
+    width: 80%;
+    filter: brightness(1.1);
+}
+.bottom-section {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: pop-up 2s ease forwards; /* Apply the animation */
+}
+.bottom-section h2 {
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: var(--darkgreen);
+    align-items: center;
+    font-size: 3rem;
+    justify-content: center;
+    width: 100%;
+}
+/* Table styling */
+.table-container {
+    position: relative;
+    padding: 2%;
+    width: 100%;
+    /* border: 4px solid var(--lightblack); */
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.table-container th{
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--semidarkgreen);
+}
+.table-container td {
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--black);
+    border-bottom: 1px solid #ddd;
+}
+.table-container tr:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.table-container tr:hover td {
+    background-color: var(--black);
+    color: var(--white);
+}
+/* Additional styles for the table container */
+.table-container caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.about
+{
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(to bottom, #0a180a, rgba(0, 0, 0, 0));
+    background-color: var(--lightblack);
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    margin-top: 1%;
+    padding-top: 5%;
+    left: 10%;
+    width: 80%;
+    background-color: var(--darkgreen);
+    box-shadow: 0 4px 8px rgba(26, 25, 25, 0.5);
+    border-radius: 20px;
+}
+.faqtitle {
+    text-align: center; /* Center the title */
+    margin-bottom: 1%; /* Space below title */
+}
+.faqtitle h1 {
+    font-size: 3rem; /* Larger font size for emphasis */
+    color: var(--white); /* Dark blue color */
+    border-bottom: 2px solid var(--semidarkgreen); /* Underline effect */
+    padding-bottom: 10px; /* Space between text and underline */
+}
+.faqinside {
+    color: var(--black); /* Dark gray text */
+}
+.faqinside h2 {
+    font-size: 1.5rem; /* Slightly larger than normal text */
+    color: var(--white); /* Teal color for question headers */
+    margin-top: 20px; /* Space above each question */
+}
+.faqinside p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 1.5rem;
+    padding: 10px; /* Padding around text */
+    background-color: var(--white); /* Light green background for answers */
+    border-left: 8px solid var(--lightblack); /* Left border for emphasis */
+    border-radius: 4px; /* Rounded corners */
+}
+.footer
+{
+    color: var(--white);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.footer {
+    margin-top: 1%;
+    background: linear-gradient(to top, var(--pureblack), var(--black));
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.footer-column {
+    flex: 1 1 0;
+    box-sizing: border-box; /
+}
+.footer-column h3 {
+    font-size: 2.3rem;
+    color: var(--white);
+    margin-bottom: 2%;
+}
+.footer-column p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 5%;
+    color: var(--white);
+    margin-bottom: 2%;
+}
+.footer-column ion-icon {
+    font-size: 1.5rem;
+}
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.password-hint {
+    visibility: hidden; /* Hidden by default */
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 55px;
+    font-size: 12px;
+    left: 0;
+    z-index: 1;
+    width: 150px;
+}
+/* Style to display the password hint */
+.input-box.show-hint .password-hint {
+    visibility: visible; /* Show when typing */
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

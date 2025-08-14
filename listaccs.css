@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.providence3dlogo
+{
+  position: absolute;
+  top: 5%;
+  left: 93.2%;
+  height: 100px;
+  width: 120px;
+  z-index: 1000;
+  overflow-y: hidden;
+}
+.sidebackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  width: 20%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-left: 10px solid #306e4a;
+}
+
+.rightbackground
+{
+  height: 100%;
+  background-color: #1f412d;
+  position: absolute;
+  left: 90%;
+  z-index: 0;
+  top: 0;
+  width: 10%;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  border-right: 10px solid #306e4a;
+}
+
+.admintext3d
+{
+  position: absolute;
+  top: 10%;
+  left: -2.5%;
+  height: 80%;
+  width: 250px;
+  z-index: 1000;
+  
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 9%;
+  width: 110px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, #367952, #1f412d);
+  backdrop-filter: blur(17px);
+  --webkit-backdrop-filter: blur(17px);
+  border-right: 10px solid #306e4a;
+  border-top: 10px solid #306e4a;
+  border-bottom: 10px solid #306e4a;
+  transition: width 0.5s ease;
+  z-index: 999;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+  width: 260px; /* Set default width */
+}
+.sidebar .logo {
+  color: #eeeef2;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px 15px;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+
+.big-white-box {
+  position: absolute;
+  background-color: #eeeef2;
+  width: 71%;
+  height: 100%;
+  left: 22%;
+  align-items: center;
+  border-right: 10px solid #367952; /* Keep the right border */
+  border-bottom: none; /* Remove the bottom border */
+  backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+  padding-top: 5%;
+  box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+  overflow-x: hidden;
+  
+}
+.big-white-box h1
+{
+  position: absolute;
+  width: 100%;
+  top: 4%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+.passbuttons {
+  position: absolute;
+  top: 10%;
+  left: 2.5%;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: center;
+  width: 95%;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.passbuttons button {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 10px; /* Increase padding for larger button size */
+  transition: transform 0.2s ease; /* Add transition for smooth effect */
+}
+
+.passbuttons button ion-icon {
+  font-size: 35px; /* Increase icon size */
+  color: #367952;
+}
+
+.passbuttons button:hover {
+  transform: scale(1.2); /* Scale button up by 10% on hover */
+}
+.listaccs3d {
+  position: absolute;
+  top: 17%;
+  left: 0%;
+  width: 95%;
+  height: 22%;
+  background-image: url('pictures/greenbg.png'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  border-radius: 2%;
+}
+.logolistaccs3d
+{
+  width: 80%;
+  left: 13%;
+  height: 100%;
+}
+.providence3dlogo123
+{
+  position: absolute;
+  top: 67%;
+  left: -10%;
+  height: 300px;
+  width: 300px;
+  z-index: 1000;
+  background-image: url('pictures/Greenlight.png'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+.detailstable {
+  padding-top: 2%;
+
+  padding-bottom: 2%;
+  left: 5%;
+  position: absolute;
+  top: 5%;
+  height: auto;
+  min-height: 90%;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Use a softer color for the border */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+  background-color: #fff; /* Add background color */
+  border-radius: 20px; /* Add border radius to make corners circular */
+}
+table {
+
+  position: relative;
+  margin-top: 50%;
+  text-align: center;
+  max-width: 90%;
+  min-width: 90%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  border-radius: 5px; /* Add border radius to make corners circular */
+  border: none;
+}
+
+td {
+  max-height: 10px; /* Set the desired fixed height */
+  overflow: hidden;
+  padding: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Add this line to prevent wrapping */
+  text-align: center;
+
+}
+
+th{
+
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px; /* Add border radius to make corners circular */
+}
+
+th {
+  background-color: #34704d;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+p
+{
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+    
+  .wrap {
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+  }
+  
+  .btnLogin-popup {
+    margin-right: 10px;
+    min-width: 40px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: #ffffff;
+    background: #4fd16b;
+    background: linear-gradient(90deg, #d4a72c 0%, #f8cb29 100%);
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .btnLogin-popup::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(32px + 150px);
+    min-height: calc(28px + 12px);
+    border: 2px solid #4fd16b;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .btnLogin-popup:hover, .btnLogin-popup:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .btnLogin-popup:hover::before, .btnLogin-popup:focus::before {
+    opacity: 1;
+  }
+  .btnLogin-popup1 {
+    min-width: 40px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: #ffffff;
+    background: #4fd16b;
+    background: linear-gradient(90deg, #d4a72c 0%, #f8cb29 100%);
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .btnLogin-popup1::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(32px + 150px);
+    min-height: calc(28px + 12px);
+    border: 2px solid #4fd16b;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .btnLogin-popup1:hover, .btnLogin-popup1:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .btnLogin-popup1:hover::before, .btnLogin-popup1:focus::before {
+    opacity: 1;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 13%;
+    left: 28%;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+    margin-left: auto; /* Or margin-right: 0 */
+    border-radius: 5px;    /* Rounded corners for a smoother look */
+    padding: 5px;          /* Add some padding for aesthetics */
+  }
+  .search-bar input {
+    padding: 8px;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray; /* Border color and thickness */
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    height: 50px;
+    width: 40px;
+    font-size: 24px; /* Adjust the font-size to make the icon bigger */
+  }
+  
+  

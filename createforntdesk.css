@@ -1,0 +1,605 @@
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 9%;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #367952, #1f412d);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 10px solid #306e4a;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    transition: width 0.5s ease;
+    z-index: 999;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+    width: 260px; /* Set default width */
+  }
+  .sidebar .logo {
+    color: #eeeef2;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  .providence3dlogo
+  {
+    position: absolute;
+    top: 5%;
+    left: 93.2%;
+    height: 100px;
+    width: 120px;
+    z-index: 1000;
+    overflow-y: hidden;
+  }
+  .sidebackground
+  {
+    height: 100%;
+    background-color: #1f412d;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: 0;
+    width: 20%;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    border-left: 10px solid #306e4a;
+  }
+  
+  .rightbackground
+  {
+    height: 100%;
+    background-color: #1f412d;
+    position: absolute;
+    left: 90%;
+    z-index: 0;
+    top: 0;
+    width: 10%;
+    border-top: 10px solid #306e4a;
+    border-bottom: 10px solid #306e4a;
+    border-right: 10px solid #306e4a;
+  }
+  
+  .admintext3d
+  {
+    position: absolute;
+    top: 10%;
+    left: -2.5%;
+    height: 80%;
+    width: 250px;
+    z-index: 1000;
+    
+  }
+
+  .big-white-box {
+    position: absolute;
+    background-color: #eeeef2;
+    width: 71%;
+    height: 100%;
+    left: 22%;
+    align-items: center;
+    border-right: 10px solid #367952; /* Keep the right border */
+    border-bottom: none; /* Remove the bottom border */
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+    padding-top: 5%;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Add shadow to the left side */
+    overflow-x: hidden;
+    
+  }
+  .big-white-box h1
+  {
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+  }
+  .passbuttons {
+    position: relative;
+    margin-top: 3%;
+    top: 15%;
+    left: 2.5%;
+    display: flex;
+    z-index: 1000;
+    justify-content: right; /* Distribute items evenly along the main axis */
+    align-items: center;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .passbuttons button {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 10px; /* Increase padding for larger button size */
+  }
+  
+  .passbuttons button ion-icon {
+    font-size: 35px; /* Increase icon size */
+    color: #367952;
+  }
+  .passbuttons button:hover {
+    transform: scale(1.2); /* Scale button up by 10% on hover */
+  }
+  .listaccs3d {
+    position: relative;
+    top: 5%;
+    left: 2.5%;
+    width: 95%;
+    height: 300px;
+    background-image: url('pictures/greenbg.png'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-radius: 2%;
+    margin-bottom: 8%;
+  }
+  .logolistaccs3d
+  {
+    width: 40%;
+    left: 28%;
+    height: 100%;
+  }
+
+  .detailstable {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 50px;
+    left: 5%;
+    position: absolute;
+    display: grid;
+    top: 5%;
+    height: auto;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Use a softer color for the border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+    background-color: #fff; /* Add background color */
+    border-radius: 20px; /* Add border radius to make corners circular */
+  }  
+
+      
+    .wrap {
+      height: 100%;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      
+    }
+
+.ownercreation
+{
+    position: relative;
+    left: 5%;
+    height: auto;
+    padding: 2%;
+
+    width: 90%; 
+    border: 3px solid rgba(0, 0, 0, 0.2); /* Use a softer color for the border */
+    background-color: #fff; /* Add background color */
+    border-radius: 20px;
+}
+
+
+  .st2:hover {
+    fill: #FFD95A;
+    stroke: #eee;
+    transition: 0.1s;
+    
+  }
+  
+  .messageBox {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 254, 254, 0.9);
+    color: #2A4353;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px; /* Adding rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+  /* Adjusting the arrow to remove it */
+  .messageBox::before {
+    display: none;
+  }
+
+.st1piety{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1piety:hover {
+    fill: rgb(194, 71, 118);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1reflection{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1reflection:hover {
+    fill: rgb(60, 177, 147);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1solace{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1solace:hover {
+    fill: rgb(177, 56, 98);
+    stroke:transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1serenity{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1serenity:hover {
+    fill: rgb(166, 53, 170);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tranquility{
+    fill:transparent;
+    stroke: #606892;
+    stroke-width: .25;
+}
+.st1tranquility:hover {
+    fill: rgb(68, 27, 163);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1evergreen{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1evergreen:hover {
+    fill: rgb(202, 46, 59);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.st1tapestry{
+    fill:transparent;
+    stroke: transparent;
+    stroke-width: .25;
+}
+.st1tapestry:hover {
+    fill: rgb(170, 72, 7);
+    stroke: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.search-container {
+    position: absolute;
+    margin-top: 20px; /* Add some space between search bar and search result */
+    top: 17%;
+    left: 52%;
+    height: auto;
+    
+}
+
+.ownername
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+.ownername label {
+    text-align: left;
+    margin-right: 3%;
+}
+
+.ownerinputs {
+    left: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35px;
+}
+.ownerinputs input{
+
+    padding: 4px;
+    width: 33%;
+}
+
+
+.owneremail
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0;
+}
+.emailname {
+    text-align: left;
+    margin-right: 14.4%;
+    padding: 3px;
+    
+}
+
+.emailinput {
+    left: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35px;
+}
+
+.emailinput input{
+
+    padding: 4px;
+    width: 80%;
+}
+
+
+.ownercontact
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0;
+}
+.contactname {
+    text-align: left;
+    margin-right: 12.2%;
+    padding: 3px;
+    
+}
+
+.contactinput {
+    left: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35px;
+}
+
+.contactinput input{
+
+    padding: 4px;
+    width: 40%;
+}
+
+
+
+.owneraddress
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0;
+}
+.addressname {
+    text-align: left;
+    margin-right: 12.2%;
+    padding: 3px;
+    
+}
+
+.addressinput {
+    left: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35px;
+}
+
+.addressinput input{
+
+    padding: 4px;
+    width: 40%;
+}
+
+
+.ownerpassword
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0;
+}
+.passwordname {
+    text-align: left;
+    margin-right: 11.1%;
+    padding: 3px;
+    
+}
+
+.passwordinput {
+    left: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35px;
+}
+
+.passwordinput input{
+
+    padding: 4px;
+    width: 40%;
+}
+
+
+.ownertype
+{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    display: inline-flex;
+    padding: 0;
+}
+.lotname {
+    text-align: left;
+    margin-right: 11.1%;
+}
+
+
+.lotinput {
+    left: 8px;
+    position: relative;
+    width: 80%;
+}
+
+.lotinput input{
+
+    padding: 4px;
+    margin-right: 5px;
+
+}
+
+.lottext
+{
+    position: relative;
+    left: -25%;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: left;
+    display: inline-flex;
+    padding: 0;
+    
+}
+.lotlot {
+    text-align: left;
+    width: 50%;
+    margin-right: 2%;
+    padding: 10px;
+
+    border-radius: 5%;  
+}
+
+
+.lotlotinput {
+    display: inline-flex;
+    grid-template-columns: 2fr 2fr; /* Two columns with equal width */
+    left: 15%;
+    position: relative;
+
+}
+.lotlotinput input{
+
+    padding: 4px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+
+}
+
+.svg-container {
+
+    width: 50%; 
+    max-width: 600px; 
+    height: 450px;
+    overflow: hidden;
+    border: 5px solid #59cc89;
+    background-color: #22223b;
+    border-radius: 5%;  
+}
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+
+.mapandinput
+{
+    display: inline-flex;
+    width: 100%;
+}
+
+.selected {
+    fill: red !important; /* Change this to the desired color */
+}
+.btnLogin-popup {
+    margin-right: 10px;
+    min-width: 60px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: #ffffff;
+    background: #4fd16b;
+    background: linear-gradient(90deg, #235f26 0%, #3da542 100%);
+    border: 5px solid white;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .btnLogin-popup::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(32px + 150px);
+    min-height: calc(28px + 12px);
+    border: 2px solid #4fd16b;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .btnLogin-popup:hover, .btnLogin-popup:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+  }
+  
+  .btnLogin-popup:hover::before, .btnLogin-popup:focus::before {
+    opacity: 1;
+  }
+
+  .buttonbg {
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #428144, #1b461d); /* Adjust colors as needed */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

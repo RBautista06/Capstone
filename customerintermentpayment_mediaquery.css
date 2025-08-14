@@ -1,0 +1,779 @@
+:root{
+    --darkgreen:#16423C;
+    --green:#3da542;
+    --semidarkgreen:#266529;
+    --lightgreen:#7fd175;
+    --black:#343131;
+    --lightblack:#CACACA;
+    --pureblack:#191919;
+    --white:#eeeef2;
+    --khaki:#FFF5E0;
+    --yellow:#FFD95A;
+
+}
+@media (max-width: 1680px)
+{
+        .radiotransfer label 
+        {
+            font-size: 16px;
+        }
+        table
+        {
+            font-size: 16px;
+        }
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+}
+@media (max-width: 1440px)
+{
+        .radiotransfer label 
+        {
+            font-size: 14px;
+        }
+        table
+        {
+            font-size: 14px;
+        }
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+}
+@media (max-width: 1280px)
+{
+        .radiotransfer label 
+        {
+            font-size: 12px;
+        }
+        table
+        {
+            font-size: 12px;
+        }
+        .internmentform {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+          .search-bar input {
+            padding: 4px;
+            width: 50%;
+            font-size: 12px;
+        }
+         .search-bar button 
+         {
+            font-size: 20px; /* Adjust the font-size to make the icon bigger */
+        }
+
+}
+@media (max-width: 1128px)
+{
+        .radiotransfer label 
+        {
+            font-size: 10px;
+        }
+        table
+        {
+            font-size: 10px;
+        }
+        .internmentform {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 10px;
+        }
+        .search-bar button 
+        {
+            font-size: 18px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:40%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 5%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding: 5px;
+        text-align: left;
+        }
+
+        .radiotransfer input[type="radio"] 
+        {
+        width: 14px;
+        height: 14px;
+        }
+
+}
+@media (max-width: 1000px)
+{
+        .internmentform::before {
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .radiotransfer label 
+        {
+            font-size: 12px;
+        }
+        table
+        {
+            font-size: 12px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 10%;
+            padding-right: 10%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 3px solid #328636;
+            box-shadow: none;
+            min-height:85vh;
+        }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 12px;
+        }
+        .search-bar button 
+        {
+            font-size: 20px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:55%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 5%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:8px;
+        text-align: left;
+        }
+
+        .radiotransfer input[type="radio"] 
+        {
+        width: 16px;
+        height: 16px;
+        }
+
+}
+@media (max-width: 800px)
+{
+        .radiotransfer label 
+        {
+            font-size: 12px;
+            
+        }
+        .radiotransfer 
+        {
+             left: 0%;
+            width: 90%;
+        }
+            
+        table
+        {
+            font-size: 12px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 3px solid #328636;
+            box-shadow: none;
+            min-height:85vh;
+            padding: 0%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 12px;
+        }
+        .search-bar button 
+        {
+            font-size: 20px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:55%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:8px;
+        text-align: left;
+        }
+
+        .radiotransfer input[type="radio"] 
+        {
+        width: 16px;
+        height: 16px;
+        }
+
+}
+@media (max-width: 700px)
+{
+        .radiotransfer label 
+        {
+            font-size: 10px;
+            
+        }
+        .radiotransfer 
+        {
+             left: 0%;
+            width: 90%;
+        }
+            
+        table
+        {
+            font-size: 10px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 3px solid #328636;
+            box-shadow: none;
+            min-height:85vh;
+            padding: 0%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 10px;
+        }
+        .search-bar button 
+        {
+            font-size: 18px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:55%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:4px;
+        text-align: left;
+        border-radius: 5px;
+        }
+
+        .radiotransfer input[type="radio"] 
+        {
+        width: 14px;
+        height: 14px;
+        }
+
+}
+
+@media (max-width: 600px)
+{
+        .radiotransfer label 
+        {
+            font-size: 10px;
+            
+        }
+        .radiotransfer 
+        {
+             left: 0%;
+            width: 90%;
+        }
+            
+        table
+        {
+            font-size: 10px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 3px solid #328636;
+            box-shadow: none;
+            min-height:85vh;
+            padding: 0%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 10px;
+        }
+        .search-bar button 
+        {
+            font-size: 18px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:55%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:4px;
+        text-align: left;
+        border-radius: 5px;
+
+        }
+        #product-table td 
+        {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .radiotransfer input[type="radio"] 
+        {
+        width: 14px;
+        height: 14px;
+        }
+
+}
+@media (max-width: 500px)
+{
+        .radiotransfer label 
+        {
+            font-size: 10px;
+            
+        }
+        .radiotransfer 
+        {
+             left: 0%;
+            width: 90%;
+        }
+            
+        table
+        {
+            font-size: 10px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 1%;
+            padding-right: 1%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 2px solid #328636;
+            box-shadow: none;
+            min-height:85vh;
+            padding: 0%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            table-layout: fixed;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+          .search-bar input {
+
+            padding: 4px;
+            width: 50%;
+            font-size: 10px;
+        }
+        .search-bar button 
+        {
+            font-size: 18px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:55%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:4px;
+        text-align: left;
+        border-radius: 5px;
+
+        }
+        .radiotransfer input[type="radio"] 
+        {
+        width: 14px;
+        height: 14px;
+        }
+
+}
+@media (max-width: 400px)
+{
+        .radiotransfer label 
+        {
+            font-size: 9px;
+            
+        }
+        .radiotransfer 
+        {
+             left: 0%;
+            width: 90%;
+        }
+            
+        table
+        {
+            font-size: 9px;
+        }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 1%;
+            padding-right: 1%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 2px solid #328636;
+            box-shadow: none;
+            min-height:80vh;
+            padding: 0%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            table-layout: fixed;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+        .search-bar input {
+
+            padding: 4px;
+            width: 70%;
+            font-size: 9px;
+        }
+        .search-bar button 
+        {
+            font-size: 18px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:65%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:4px;
+        text-align: left;
+        border-radius: 5px;
+
+        }
+        .radiotransfer input[type="radio"] 
+        {
+        width: 12px;
+        height: 12px;
+        }
+
+}
+@media (max-width: 300px)
+{
+        .radiotransfer label 
+        {
+            font-size: 8px;
+            
+        }
+        .radiotransfer 
+        {
+             padding-left: 5%;
+            width: 100%;
+        }
+            
+        table
+        {
+            font-size: 8px;
+        }
+
+
+        .detailstable th:nth-child(4), .detailstable td:nth-child(4),
+        .detailstable th:nth-child(5), .detailstable td:nth-child(5) {
+        display: none;
+    }
+        .internmentform {
+            width: 100%;
+            left: 0;
+            padding-left: 1%;
+            padding-right: 1%;
+            
+        }
+        .internmentform::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('pictures/backgrondoverlay.png');
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .detailstable
+        {
+            border: 2px solid #328636;
+            box-shadow: none;
+            min-height:80vh;
+            padding: 0%;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        #product-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            table-layout: fixed;
+         }
+        .search-bar
+        {
+            margin-top: 1%;
+        }
+        .search-bar input {
+
+            padding: 4px;
+            width: 70%;
+            font-size: 8px;
+        }
+        .search-bar button 
+        {
+            font-size: 16px; /* Adjust the font-size to make the icon bigger */
+        }
+        .internmentform h1 img
+        {
+            width:70%;
+
+        }
+        .radiotransfer 
+        {
+        margin-top: 1%;
+        left: 0%;
+        }
+
+        #product-table th, #product-table td 
+        {
+        padding:2px;
+        text-align: left;
+        border-radius: 5px;
+
+        }
+        .radiotransfer input[type="radio"] 
+        {
+        width: 10px;
+        height: 10px;
+        }
+
+}

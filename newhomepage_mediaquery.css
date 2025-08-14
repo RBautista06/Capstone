@@ -1,0 +1,169 @@
+@media (max-width: 768px)
+{
+
+    p
+{
+    color: var(--black);
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+
+}
+    .navbar .links
+    {
+        display: none;
+    }
+    .navbar .toggle-btn
+    {
+        display: block;
+        font-size: 4rem;
+    }
+    .logo
+    {
+        width: 50%;
+        height: 50px;
+    }
+    .dropdown-menu
+    {
+        display: block;
+    }
+
+    .firstdiv-picture img
+    {
+        width: 60%;
+        filter: brightness(1.1);
+    }
+    .firstdiv-info
+    {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .firstdiv-buttons
+    {
+    display: flex;
+    justify-content: space-between;
+    }
+    .firstdiv-buttons button
+    {
+        width: 48%;
+    }
+    .seconddiv-info {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .seconddiv-picture
+    {
+    background-image: url('pictures/greenbg_reversed.PNG');
+    }
+    .seconddiv-picture img
+    {
+        width: 40%;
+        filter: brightness(1.1);
+
+    }
+    .thirddiv-info
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+        /* border: #191919 solid 1px; */
+    }
+    .box {
+
+        height: 30vh;
+    }
+    .dropdown-menu
+    {
+        width: 50%;
+    }
+    .footer
+    {
+        display: flex;
+    }
+    .dropdown-menu li a
+    {
+        font-size: 1.4rem;
+    }
+    .btnLogin-popup
+    {
+        font-size: 1.4rem;
+    }
+    
+}
+@media (max-width: 640px)
+{
+    .footer
+    {
+        display: grid;
+    }
+    .dropdown-menu
+    {
+        width: 60%;
+    }
+    .dropdown-menu li a
+    {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 411px)
+{
+    p
+    {
+        color: var(--black);
+        font-size: 1.2rem;
+    }
+
+    .logo
+    {
+        width: 50%;
+        height: 45px;
+        
+    }
+    .dropdown-menu
+    {
+        display: block;
+    }
+    .firstdiv-picture img
+    {
+        width: 80%;
+        
+    }
+    .firstdiv-info
+    {
+        padding: 5%;
+    }
+    .firstdiv-buttons
+    {
+        display: inline;
+    }
+    .firstdiv-buttons button
+    {
+        width: 100%;
+    }
+    .seconddiv-info
+    {
+        padding: 5%;
+    }
+    .seconddiv-picture img
+    {
+         width: 50%;
+    }
+    .thirddiv-info
+    {
+        padding: 5%;
+    }
+    .box {
+
+        height: 20vh;
+    }
+    .footer
+    {
+        display: grid;
+    }
+    .dropdown-menu
+    {
+        width: 80%;
+    }
+}

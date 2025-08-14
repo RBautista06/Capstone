@@ -1,0 +1,248 @@
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .big-white-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-height: 100%;
+    height: 950px;
+    max-width: 90%;
+    width: 70%;
+    left: 17%;
+    top: 0;
+    padding-top: 50px;
+    margin-left: 5%;
+    overflow: auto; /* Enable scrolling if content exceeds the box size */
+    border-right: 12px solid #367952; /* Add a black border on the right side */
+  }
+  .providence3dlogo
+{
+  position: absolute;
+  top: 67%;
+  left: 7%;
+  height: 300px;
+  width: 300px;
+  z-index: 1000;
+}
+  table {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+  }
+  td {
+    max-height: 50px; /* Set the desired fixed height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Add this line to prevent wrapping */
+    text-align: center;
+  }
+  
+  th{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: rgb(27, 39, 46);
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(199, 199, 197);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  p
+  {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  .button2 {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  
+      
+  }
+  .button2 {
+	width: 150px;
+	height: 30px;
+    margin: auto;
+	cursor: pointer;
+    display: flex;
+	align-items: center;
+	background: red;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+	background: #e62222;
+}
+
+.button2, .button2 span {
+	transition: 200ms;
+}
+
+.button2 .text {
+	transform: translateX(35px);
+	color: white;
+	font-weight: bold;
+}
+
+.button2 .icon {
+	position: absolute;
+	border-left: 1px solid #c41b1b;
+	transform: translateX(110px);
+	height: 30px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button2 svg {
+	width: 15px;
+	fill: #eee;
+}
+
+.button2:hover {
+	background: #ff3636;
+}
+
+.button2:hover .text {
+	color: transparent;
+}
+
+.button2:hover .icon {
+	width: 150px;
+	border-left: none;
+	transform: translateX(0);
+}
+
+.button2:focus {
+	outline: none;
+}
+a{
+    text-decoration: none;
+  }
+
+  .wrapper1 {
+    position: absolute;
+    width: 700px;
+    height: 50%;
+    top: 20%;
+    left: 30%;
+    background: rgb(255, 255, 255);
+    border: 2px solid #0476E1;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 999;
+    text-align: left;
+    font-size: 14px;
+    overflow: auto;
+    white-space: pre-line; /* Add this line to break text onto the next line */
+}
+.wrapper1 h2
+{
+  position: fixed;
+  top: 20%;
+}
+  .wrapper1.active-popup
+  {
+      transform: scale(1);
+  }
+  
+  .wrapper1.active
+  {
+      height: 700px;
+  }
+  .wrapper1 .form-box
+  {
+      width: 100%;
+      padding: 40px;
+  }
+  .wrapper1 .form-box.login
+  {
+      transition: transform .18s ease;
+      transform: translateX(0);
+      /*display: none;*/
+  }
+  
+  .wrapper1.active .form-box.login
+  {
+      transition: none;
+      transform: translateX(-400px);
+  }
+  .wrapper1 .form-box.register
+  {
+      position: absolute;
+      transition: none;
+      transform: translateX(600px);
+      
+  }
+  .wrapper1.active .form-box.register
+  {
+      position: absolute;
+      transition: transform .18s ease;
+      transform: translateX(0);
+  }
+  .wrapper1 .iconclose
+  {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background-color: rgb(46, 46, 46);
+      font-size: 2em;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+      cursor: pointer;
+      z-index: 1;
+  }
+  .btnLogin-popup {
+    background-color: rgb(9, 9, 192);
+    color: white;
+    width: 40%;
+    height: 70%;
+    font-size: 24px;
+}
+.document-link {
+  background-color: #0476E1;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Add this style to make the icon white */
+.document-link ion-icon {
+  color: #fff;
+}
