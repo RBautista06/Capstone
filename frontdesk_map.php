@@ -36,17 +36,17 @@ $conn->close();
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <!-- <div class="containermagni">
-    <model-viewer id="myModelViewer" 
-                  src="3dmodels/magnifyall.gltf" 
-                  alt="A 3D model of a magnifying glass" 
-                  shadow-intensity="3" 
-				  camera-orbit="80deg 90deg 15m" 
+    <model-viewer id="myModelViewer"
+                  src="3dmodels/magnifyall.gltf"
+                  alt="A 3D model of a magnifying glass"
+                  shadow-intensity="3"
+				  camera-orbit="80deg 90deg 15m"
                   class="magni">
     </model-viewer>
 </div> -->
 
-<model-viewer id="myModelViewer" src="3dmodels/frontdesklogo.gltf" alt="A 3D model of a walking character" 
-    shadow-intensity="0.5" ar animation-name="animation_name" autoplay="speed: 0.5" 
+<model-viewer id="myModelViewer" src="3dmodels/frontdesklogo.gltf" alt="A 3D model of a walking character"
+    shadow-intensity="0.5" ar animation-name="animation_name" autoplay="speed: 0.5"
     class="providence3dlogo" camera-orbit="180deg 90deg 150m">
 </model-viewer>
 <div class="sidebackground">
@@ -56,8 +56,8 @@ $conn->close();
 
 </div>
 
-<model-viewer id="myModelViewer" src="3dmodels/FRONTDESKTEXT.gltf" alt="A 3D model of a walking character" 
-    shadow-intensity="3" ar animation-name="animation_name" autoplay="speed: 0.5" 
+<model-viewer id="myModelViewer" src="3dmodels/FRONTDESKTEXT.gltf" alt="A 3D model of a walking character"
+    shadow-intensity="3" ar animation-name="animation_name" autoplay="speed: 0.5"
     class="admintext3d" camera-orbit="340deg 83deg 300m" camera-controls>
 </model-viewer>
 <body>
@@ -84,7 +84,7 @@ $conn->close();
 			<input type="text" id="search-input" placeholder="Enter the name of the interred decedent..." onkeyup="suggestSearch()">
 			<div id="searchresult" class="searchresult"></div>
 			<span> &nbsp;&nbsp;&nbsp;<ion-icon name="search-outline"></ion-icon> </span>
-			<button class="locate" id="showocation">LOCATE</button>	
+			<button class="locate" id="showocation">LOCATE</button>
 	</div>
 	<h2><img src="pictures/decendentdetails.png" ></h2>
 
@@ -141,7 +141,7 @@ $conn->close();
 </div>
 
 
-    <script>
+<script>
         document.body.addEventListener('click', function(event) {
             var searchResult = document.getElementById('searchresult');
             if (!searchResult.contains(event.target)) {
@@ -380,24 +380,24 @@ $conn->close();
             }
             else if (graveLocation.match(/^EVGM-SEC1-[A-Z]\d*$/)) {
                 pathId = "evergreensection1pathway";
-            } 
+            }
         else if (graveLocation.startsWith("EVGM-SEC4")) {
 			pathId = "evergreensection4pathway";
 		} else if (graveLocation.startsWith("EVGM-SEC5")) {
 			pathId = "evergreensection5pathway";
-		} 
-        
+		}
+
         ////////baliktad to
         else if (graveLocation.startsWith("EVGM-SEC6")) {
 			pathId = "evergreensection6pathway";
 
 
-        
+
 		} else if (graveLocation.startsWith("EVGM-SEC7")) {
 			pathId = "evergreensection7pathway";
 		} else if (graveLocation.startsWith("EVGM-SEC8")) {
 			pathId = "evergreensection8pathway";
-		} 
+		}
         ////////baliktad to
         else if (graveLocation.startsWith("EVGM-SEC9")) {
 			pathId = "evergreensection9pathway";
@@ -405,10 +405,10 @@ $conn->close();
 
         }else if (graveLocation.match(/^EVGM-SEC10-[A-Z]\d*$/)) {
 			pathId = "evergreensection10pathway";
-		} 
-        
+		}
 
-        
+
+
         else if (graveLocation.startsWith("EVGM-SEC11")) {
 			pathId = "evergreensection11pathway";
 		} else if (graveLocation.startsWith("EVGM-SEC12")) {
@@ -429,7 +429,7 @@ $conn->close();
 			pathId = "evergreensection21pathway";
 		} else if (graveLocation.startsWith("EVGM-SEC20")) {
 			pathId = "evergreensection20pathway";
-		} 
+		}
 		else if (graveLocation.startsWith("EVGM-SEC21")) {
 			pathId = "evergreensection21pathway";
 		}
@@ -461,252 +461,243 @@ $conn->close();
         else if (graveLocation.startsWith("TOL-SEC1-B")) {
 			pathId = "tolsec0pathway";
 		}
-else if (graveLocation.match(/^TOL-SEC1-[A-Z]\d*$/)) {
-    pathId = "tolsec1pathway";
-}
+        else if (graveLocation.match(/^TOL-SEC1-[A-Z]\d*$/)) {
+            pathId = "tolsec1pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC2-[A-Z](1[11]|20)$/)) { 
-    pathId = "tolsec1pathway"; // Matches numbers 10 to 20
-} else if (graveLocation.match(/^TOL-SEC2-[A-Z]([1-9]|10)$/)) { 
-    pathId = "tolsec2pathway"; // Matches numbers 1 to 10
-}
+        else if (graveLocation.match(/^TOL-SEC2-[A-Z](1[11]|20)$/)) {
+            pathId = "tolsec1pathway"; // Matches numbers 10 to 20
+        } else if (graveLocation.match(/^TOL-SEC2-[A-Z]([1-9]|10)$/)) {
+            pathId = "tolsec2pathway"; // Matches numbers 1 to 10
+        }
 
-else if (graveLocation.match(/^TOL-SEC3-[E-K]\d*$/)) {
-    pathId = "tolsec2pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC3-[E-K]\d*$/)) {
+            pathId = "tolsec2pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC3-[A-D]\d*$/)) {
-    pathId = "tolsec3pathway";
-}
-else if (graveLocation.match(/^TOL-SEC4-[K-T]\d*$/)) {
-    pathId = "tolsec3pathway";
-} 
-///////////////////////////////PROBLEM HERE THE PATH IS BALIKTAD TOLSE4PATHWAY
-else if (graveLocation.match(/^TOL-SEC4-[A-J]\d*$/)) {
-    pathId = "tolsec4pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC5-[J-T]\d*$/)) {
-    pathId = "tolsec4pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC5-[A-I]\d*$/)) {
-    pathId = "tolsec5pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC3-[A-D]\d*$/)) {
+            pathId = "tolsec3pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC4-[K-T]\d*$/)) {
+            pathId = "tolsec3pathway";
+        }
+        ///////////////////////////////PROBLEM HERE THE PATH IS BALIKTAD TOLSE4PATHWAY
+        else if (graveLocation.match(/^TOL-SEC4-[A-J]\d*$/)) {
+            pathId = "tolsec4pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC5-[J-T]\d*$/)) {
+            pathId = "tolsec4pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC5-[A-I]\d*$/)) {
+            pathId = "tolsec5pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC6-[J-S]\d*$/)) {
-    pathId = "tolsec5pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC6-[A-I]\d*$/)) {
-    pathId = "tolsec6pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC6-[J-S]\d*$/)) {
+            pathId = "tolsec5pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC6-[A-I]\d*$/)) {
+            pathId = "tolsec6pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC7-[J-S]\d*$/)) {
-    pathId = "tolsec6pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC7-[A-I]\d*$/)) {
-    pathId = "tolsec7pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC7-[J-S]\d*$/)) {
+            pathId = "tolsec6pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC7-[A-I]\d*$/)) {
+            pathId = "tolsec7pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC8-[J-T]\d*$/)) {
-    pathId = "tolsec7pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC8-[A-I]\d*$/)) {
-    pathId = "tolsec8pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC8-[J-T]\d*$/)) {
+            pathId = "tolsec7pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC8-[A-I]\d*$/)) {
+            pathId = "tolsec8pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC9-[J-T]\d*$/)) {
-    pathId = "tolsec8pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC9-[A-I]\d*$/)) {
-    pathId = "tolsec9pathway";
-} 
+        else if (graveLocation.match(/^TOL-SEC9-[J-T]\d*$/)) {
+            pathId = "tolsec8pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC9-[A-I]\d*$/)) {
+            pathId = "tolsec9pathway";
+        }
 
-else if (graveLocation.match(/^TOL-SEC10-[L-Q]\d*$/)) {
-    pathId = "tolsec11pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC10-[A-L]\d*$/)) {
-    pathId = "tolsec10pathway";
-} 
-
-
-else if (graveLocation.match(/^TOL-SEC11-[A-D]\d*$/)) {
-    pathId = "tolsec11pathway";
-} 
-else if (graveLocation.match(/^TOL-SEC11-[E-H]\d*$/)) {
-    pathId = "tolsec13pathway";
-} 
-
-
-else if (graveLocation.match(/^COS-SEC4-[A-D]\d*$/)) {
-    pathId = "tolsec13pathway";
-} 
-else if (graveLocation.match(/^COS-SEC4-[E-H]\d*$/)) {
-    pathId = "cossec4pathway";
-} 
-else if (graveLocation.match(/^COS-SEC3-[A-Z]\d*$/)) {
-    pathId = "cossec3pathway";
-} 
-
-
-
-
-
-
-
-
-
-
-					else if (graveLocation.startsWith("SOL-SEC1")) {
-                pathId = "solacesectiion1pathway";
-            } else {
-                console.log("No matching path ID for graveLocation:", graveLocation);
-                alert("No matching path ID for graveLocation.");
-                return;
-            }
-            // Clear any existing path with the ID "pathway"
-            var existingPath = svg.getElementById("pathway");
-            if (existingPath) {
-                svg.removeChild(existingPath);
-            }
-
-            var pathElement = svg.getElementById(pathId);
-            if (pathElement) {
-                var pathLength = pathElement.getTotalLength();
-                var closestPointOnPath = pathElement.getPointAtLength(0);
-                var closestLength = 0;
-                var minDistance = Infinity;
-
-                for (var i = 0; i <= pathLength; i += 1) {
-                    var point = pathElement.getPointAtLength(i);
-                    var distance = Math.sqrt(Math.pow(point.x - centerX, 2) + Math.pow(point.y - centerY, 2));
-                    if (distance < minDistance) {
-                        minDistance = distance;
-                        closestPointOnPath = point;
-                        closestLength = i;
-                    }
-                }
-
-                var pathD = `M${pathElement.getPointAtLength(0).x},${pathElement.getPointAtLength(0).y} `;
-                for (var i = 0; i <= closestLength; i += 1) {
-                    var point = pathElement.getPointAtLength(i);
-                    pathD += `L${point.x},${point.y} `;
-                }
-                pathD += `L${centerX},${centerY}`;
-
-                console.log("Path Data (d attribute):", pathD);
-
-                var newPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                newPath.setAttribute("id", "pathway");
-                newPath.setAttribute("d", pathD);
-                newPath.setAttribute("stroke", "red");
-                newPath.setAttribute("stroke-width", "2");
-                newPath.setAttribute("fill", "none");
-                svg.appendChild(newPath);
-
-                var totalPathLength = newPath.getTotalLength();
-                newPath.style.strokeDasharray = totalPathLength;
-                newPath.style.strokeDashoffset = totalPathLength;
-
-                newPath.animate([{
-                    strokeDashoffset: totalPathLength
-                }, {
-                    strokeDashoffset: 0
-                }], {
-                    duration: 4000,
-                    easing: 'linear'
-                }).onfinish = function() {
-                    newPath.style.strokeDashoffset = 0;
-                };
-            } else {
-                console.log("Predefined path not found for " + pathId);
-                alert("Predefined path not found.");
-            }
+        else if (graveLocation.match(/^TOL-SEC10-[L-Q]\d*$/)) {
+            pathId = "tolsec11pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC10-[A-L]\d*$/)) {
+            pathId = "tolsec10pathway";
         }
 
 
-        document.getElementById("showocation").addEventListener("click", function() {
-            var whiteBox = document.querySelector('.white-box p');
-            if (!whiteBox) {
-                alert("No grave details found.");
-                return;
+        else if (graveLocation.match(/^TOL-SEC11-[A-D]\d*$/)) {
+            pathId = "tolsec11pathway";
+        }
+        else if (graveLocation.match(/^TOL-SEC11-[E-H]\d*$/)) {
+            pathId = "tolsec13pathway";
+        }
+
+
+        else if (graveLocation.match(/^COS-SEC4-[A-D]\d*$/)) {
+            pathId = "tolsec13pathway";
+        }
+        else if (graveLocation.match(/^COS-SEC4-[E-H]\d*$/)) {
+            pathId = "cossec4pathway";
+        }
+        else if (graveLocation.match(/^COS-SEC3-[A-Z]\d*$/)) {
+            pathId = "cossec3pathway";
+        }
+
+        else if (graveLocation.startsWith("SOL-SEC1")) {
+            pathId = "solacesectiion1pathway";
+        } else {
+            console.log("No matching path ID for graveLocation:", graveLocation);
+            alert("No matching path ID for graveLocation.");
+            return;
+        }
+        // Clear any existing path with the ID "pathway"
+        var existingPath = svg.getElementById("pathway");
+        if (existingPath) {
+            svg.removeChild(existingPath);
+        }
+
+        var pathElement = svg.getElementById(pathId);
+        if (pathElement) {
+            var pathLength = pathElement.getTotalLength();
+            var closestPointOnPath = pathElement.getPointAtLength(0);
+            var closestLength = 0;
+            var minDistance = Infinity;
+
+            for (var i = 0; i <= pathLength; i += 1) {
+                var point = pathElement.getPointAtLength(i);
+                var distance = Math.sqrt(Math.pow(point.x - centerX, 2) + Math.pow(point.y - centerY, 2));
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestPointOnPath = point;
+                    closestLength = i;
+                }
             }
 
-            var detailsText = whiteBox.innerHTML;
-            var graveLocation = extractGraveLocation(detailsText);
+            var pathD = `M${pathElement.getPointAtLength(0).x},${pathElement.getPointAtLength(0).y} `;
+            for (var i = 0; i <= closestLength; i += 1) {
+                var point = pathElement.getPointAtLength(i);
+                pathD += `L${point.x},${point.y} `;
+            }
+            pathD += `L${centerX},${centerY}`;
 
-            if (graveLocation) {
-                var svgContainer = document.getElementById("svgContainer");
-                var svg = svgContainer.getElementsByTagName("svg")[0];
-                var elements = svg.querySelectorAll("polygon, rect");
-                elements.forEach(function(element) {
-                    element.classList.remove("glow");
-                });
+            console.log("Path Data (d attribute):", pathD);
 
-                var element = svg.getElementById(graveLocation);
-                if (element) {
-                    element.classList.add("glow");
+            var newPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            newPath.setAttribute("id", "pathway");
+            newPath.setAttribute("d", pathD);
+            newPath.setAttribute("stroke", "red");
+            newPath.setAttribute("stroke-width", "2");
+            newPath.setAttribute("fill", "none");
+            svg.appendChild(newPath);
 
-                    var locationIdMatch = detailsText.match(/Location ID: (.+)/);
-                    if (locationIdMatch && locationIdMatch[1]) {
-                        var locationId = locationIdMatch[1].trim();
+            var totalPathLength = newPath.getTotalLength();
+            newPath.style.strokeDasharray = totalPathLength;
+            newPath.style.strokeDashoffset = totalPathLength;
 
-                        fetchAdditionalLots(locationId)
-                            .then(function(response) {
-                                let lotsToHighlight = [];
+            newPath.animate([{
+                strokeDashoffset: totalPathLength
+            }, {
+                strokeDashoffset: 0
+            }], {
+                duration: 4000,
+                easing: 'linear'
+            }).onfinish = function() {
+                newPath.style.strokeDashoffset = 0;
+            };
+        } else {
+            console.log("Predefined path not found for " + pathId);
+            alert("Predefined path not found.");
+        }
+    }
 
-                                // Check TYPE_OF_LOT and populate lotsToHighlight array accordingly
-                                switch (response.TYPE_OF_LOT) {
-                                    case 'court4':
-                                        lotsToHighlight = [response.LOT2, response.LOT3, response.LOT4];
-                                        break;
-                                    case 'court8':
-                                        lotsToHighlight = [response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6, response.LOT7, response.LOT8];
-                                        break;
-                                    case 'estate12':
-                                        lotsToHighlight = [
-                                            response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6,
-                                            response.LOT7, response.LOT8, response.LOT9, response.LOT10, response.LOT11,
-                                            response.LOT12
-                                        ];
-                                        break;
-                                    case 'estate24':
-                                        lotsToHighlight = [
-                                            response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6,
-                                            response.LOT7, response.LOT8, response.LOT9, response.LOT10, response.LOT11,
-                                            response.LOT12, response.LOT13, response.LOT14, response.LOT15, response.LOT16,
-                                            response.LOT17, response.LOT18, response.LOT19, response.LOT20, response.LOT21,
-                                            response.LOT22, response.LOT23, response.LOT24
-                                        ];
-                                        break;
-                                    default:
-                                        console.log("Unknown TYPE_OF_LOT:", response.TYPE_OF_LOT);
-                                        break;
-                                }
 
-                                if (lotsToHighlight.length > 0) {
-                                    highlightAdditionalLots(lotsToHighlight);
-                                }
+    document.getElementById("showocation").addEventListener("click", function() {
+        var whiteBox = document.querySelector('.white-box p');
+        if (!whiteBox) {
+            alert("No grave details found.");
+            return;
+        }
 
-                                // Call createPath with the correct graveLocation and element
-                                createPath(svg, graveLocation, element);
+        var detailsText = whiteBox.innerHTML;
+        var graveLocation = extractGraveLocation(detailsText);
 
-                                // Optionally zoom to the grave location
-                                zoomToGrave(svg, element);
-                            })
-                            .catch(function(error) {
-                                console.error("Error fetching additional lots:", error);
-                            });
+        if (graveLocation) {
+            var svgContainer = document.getElementById("svgContainer");
+            var svg = svgContainer.getElementsByTagName("svg")[0];
+            var elements = svg.querySelectorAll("polygon, rect");
+            elements.forEach(function(element) {
+                element.classList.remove("glow");
+            });
 
-                    } else {
-                        alert("Location ID could not be extracted.");
-                    }
+            var element = svg.getElementById(graveLocation);
+            if (element) {
+                element.classList.add("glow");
+
+                var locationIdMatch = detailsText.match(/Location ID: (.+)/);
+                if (locationIdMatch && locationIdMatch[1]) {
+                    var locationId = locationIdMatch[1].trim();
+
+                    fetchAdditionalLots(locationId)
+                        .then(function(response) {
+                            let lotsToHighlight = [];
+
+                            // Check TYPE_OF_LOT and populate lotsToHighlight array accordingly
+                            switch (response.TYPE_OF_LOT) {
+                                case 'court4':
+                                    lotsToHighlight = [response.LOT2, response.LOT3, response.LOT4];
+                                    break;
+                                case 'court8':
+                                    lotsToHighlight = [response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6, response.LOT7, response.LOT8];
+                                    break;
+                                case 'estate12':
+                                    lotsToHighlight = [
+                                        response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6,
+                                        response.LOT7, response.LOT8, response.LOT9, response.LOT10, response.LOT11,
+                                        response.LOT12
+                                    ];
+                                    break;
+                                case 'estate24':
+                                    lotsToHighlight = [
+                                        response.LOT2, response.LOT3, response.LOT4, response.LOT5, response.LOT6,
+                                        response.LOT7, response.LOT8, response.LOT9, response.LOT10, response.LOT11,
+                                        response.LOT12, response.LOT13, response.LOT14, response.LOT15, response.LOT16,
+                                        response.LOT17, response.LOT18, response.LOT19, response.LOT20, response.LOT21,
+                                        response.LOT22, response.LOT23, response.LOT24
+                                    ];
+                                    break;
+                                default:
+                                    console.log("Unknown TYPE_OF_LOT:", response.TYPE_OF_LOT);
+                                    break;
+                            }
+
+                            if (lotsToHighlight.length > 0) {
+                                highlightAdditionalLots(lotsToHighlight);
+                            }
+
+                            // Call createPath with the correct graveLocation and element
+                            createPath(svg, graveLocation, element);
+
+                            // Optionally zoom to the grave location
+                            zoomToGrave(svg, element);
+                        })
+                        .catch(function(error) {
+                            console.error("Error fetching additional lots:", error);
+                        });
+
                 } else {
-                    alert("Element with grave location " + graveLocation + " not found.");
+                    alert("Location ID could not be extracted.");
                 }
             } else {
-                alert("Grave location could not be extracted.");
+                alert("Element with grave location " + graveLocation + " not found.");
             }
-        });
-    </script>
+        } else {
+            alert("Grave location could not be extracted.");
+        }
+    });
+</script>
 
 
 </div>
